@@ -1,0 +1,1 @@
+C:\Git\SignalR and IOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\Magenic.SignalRandIOT.WinApp.Windows.csproj;neutral

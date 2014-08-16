@@ -1,0 +1,1 @@
+This is a sketch we used on the arduino to work with the temperature sensors. This was just to get a prototype going and can be used at home with an arduino.

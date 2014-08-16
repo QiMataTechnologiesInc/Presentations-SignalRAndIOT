@@ -1,0 +1,15 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\git\signalr and iot\visual studio\magenic.signalrandiot.client\magenic.signalrandiot.winapp\magenic.signalrandiot.winapp.windows\obj\debug\intermediatexaml\magenic.signalrandiot.winapp.windows.exe" HashGuid="770105e3-a3ba-1366-5898-c1bff069574c" />
+    <ReferenceAssembly PathName="c:\program files (x86)\telerik\ui for windows 8.1 xaml q2 2014\extensionsdks\core\references\commonconfiguration\neutral\telerik.core.dll" HashGuid="6671babb-4f09-d0f5-12c3-92577b0b7077" />
+    <ReferenceAssembly PathName="c:\program files (x86)\telerik\ui for windows 8.1 xaml q2 2014\extensionsdks\core\references\commonconfiguration\neutral\telerik.ui.xaml.chart.dll" HashGuid="c08860fa-e604-dcc7-10b0-cbedae213c9e" />
+    <ReferenceAssembly PathName="c:\program files (x86)\telerik\ui for windows 8.1 xaml q2 2014\extensionsdks\core\references\commonconfiguration\neutral\telerik.ui.xaml.datavisualization.dll" HashGuid="88331b4f-c525-58f2-2c32-59ae74e66fa9" />
+    <ReferenceAssembly PathName="c:\program files (x86)\telerik\ui for windows 8.1 xaml q2 2014\extensionsdks\core\references\commonconfiguration\neutral\telerik.ui.xaml.grid.dll" HashGuid="1a70cee7-fac5-d3c2-f20c-abdb328a6ab7" />
+    <ReferenceAssembly PathName="c:\program files (x86)\telerik\ui for windows 8.1 xaml q2 2014\extensionsdks\core\references\commonconfiguration\neutral\telerik.ui.xaml.input.dll" HashGuid="e2d48c1e-3bb6-a40b-2ddf-df54c212da7a" />
+    <ReferenceAssembly PathName="c:\program files (x86)\telerik\ui for windows 8.1 xaml q2 2014\extensionsdks\core\references\commonconfiguration\neutral\telerik.ui.xaml.primitives.dll" HashGuid="438150fd-0781-31d9-e0a9-268239217175" />
+    <ReferenceAssembly PathName="c:\git\signalr and iot\visual studio\magenic.signalrandiot.client\packages\microsoft.aspnet.signalr.client.2.0.2\lib\portable-net45+sl5+netcore45+wp8\microsoft.aspnet.signalr.client.dll" HashGuid="764c6f19-cfc4-6869-4d19-64df55b95642" />
+    <ReferenceAssembly PathName="c:\git\signalr and iot\visual studio\magenic.signalrandiot.client\packages\newtonsoft.json.5.0.1\lib\netcore45\newtonsoft.json.dll" HashGuid="1c57148c-6f74-28cf-f39b-c2a3743f7965" />
+    <ReferenceAssembly PathName="c:\git\signalr and iot\visual studio\magenic.signalrandiot.client\packages\microsoft.net.http.2.1.10\lib\win8\system.net.http.extensions.dll" HashGuid="b50282f8-b9f8-4408-8d49-ba2efe301624" />
+    <ReferenceAssembly PathName="c:\git\signalr and iot\visual studio\magenic.signalrandiot.client\packages\microsoft.net.http.2.1.10\lib\win8\system.net.http.primitives.dll" HashGuid="7b71418d-e056-7613-c839-85fb8f6472a6" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

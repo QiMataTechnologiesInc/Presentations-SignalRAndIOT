@@ -1,0 +1,10 @@
+C:\Git\SignalR and IOT\Unity\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+C:\Git\SignalR and IOT\Unity\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+C:\Git\SignalR and IOT\Unity\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\Git\SignalR and IOT\Unity\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\Git\SignalR and IOT\Unity\Temp\UnityVS_bin\Debug\websocket-sharp.dll
+C:\Git\SignalR and IOT\Unity\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\Git\SignalR and IOT\Unity\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\Git\SignalR and IOT\Unity\obj\Debug\UnityVS.Unity.CSharp.csprojResolveAssemblyReference.cache
+C:\Git\SignalR and IOT\Unity\obj\Debug\Assembly-CSharp.dll
+C:\Git\SignalR and IOT\Unity\obj\Debug\Assembly-CSharp.pdb

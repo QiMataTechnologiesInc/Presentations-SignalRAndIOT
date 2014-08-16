@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div id="example" ng-app="KendoDemos">
+    <div ng-controller="MyCtrl">
+        <div class="demo-section k-content">
+            <div class="box-col" style="width: 300px">
+                <h4>Linear Gauge</h4>
+                <span kendo-radialgauge
+                      k-scale="{ min:0, max: 60}"
+                      ng-model="selectedNumber"></span>
+            </div>
+            <div class="box-col" style="width: 300px">
+                <h4>Value</h4>
+                <input kendo-slider k-min="0" k-max="60" k-small-step="6" k-large-step="12" ng-model="selectedNumber">
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts {
+<script>
+    angular.module("KendoDemos", ["kendo.directives"]);
+
+    function MyCtrl($scope) {
+        $scope.selectedNumber = 10;
+
+        var deviceHub = $.connection.deviceDataHub;
+
+        deviceHub.client.newDataRecieved = function (deviceData) {
+            $scope.$apply(function () {
+                $scope.selectedNumber = deviceData.DataValue;
+            });
+        }
+
+        $.connection.hub.start();
+    }
+</script>
+
+}

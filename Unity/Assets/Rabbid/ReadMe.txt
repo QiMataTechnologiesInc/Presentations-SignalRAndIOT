@@ -1,0 +1,1 @@
+Open Maya and import the model.

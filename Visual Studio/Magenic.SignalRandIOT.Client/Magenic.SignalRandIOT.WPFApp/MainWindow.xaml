@@ -1,0 +1,34 @@
+﻿<Window x:Class="Magenic.SignalRandIOT.WPFApp.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:demo="clr-namespace:Magenic.SignalRandIOT.WPFApp"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+             HorizontalAlignment="Center" VerticalAlignment="Center">
+	<Grid>
+		<telerik:RadRadialGauge Width="220" Height="220">
+			<telerik:RadialScale Min="0" Max="60" 
+									 MajorTickStep="6"
+									 RangeLocation="Outside"
+									 Radius="0.99"
+									 LabelRotationMode="None"
+									 LabelFormat="{}{00}">
+				<telerik:RadialScale.Ranges>
+					<telerik:GaugeRange
+								Min="0" Max="40"
+								StartWidth="0.01"
+								EndWidth="0.01"
+								Background="#FFA3A3A3" />
+					<telerik:GaugeRange
+								Min="44" Max="60"
+								StartWidth="0.01"
+								EndWidth="0.01"
+								Background="#FFE50000" />
+				</telerik:RadialScale.Ranges>
+                <telerik:RadialScale.Indicators>
+                    <telerik:Needle x:Name="needle" Value="6" IsAnimated="True" />
+                    <telerik:Pinpoint />
+                </telerik:RadialScale.Indicators>
+            </telerik:RadialScale>
+		</telerik:RadRadialGauge>
+	</Grid>
+</Window>

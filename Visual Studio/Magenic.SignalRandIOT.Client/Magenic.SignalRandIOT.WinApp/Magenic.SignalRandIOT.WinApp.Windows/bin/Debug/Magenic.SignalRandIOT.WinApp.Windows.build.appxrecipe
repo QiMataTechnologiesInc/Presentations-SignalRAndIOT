@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JAREDRPC</Machine>
+    <WindowsUser>Jared</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>f9456c3d-2959-4954-a8f3-06afed341230</PackageIdentityName>
+    <IntermediateOutputPath>C:\Git\SignalR and IOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Git\SignalR and IOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Git\SignalR and IOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\bin\Debug\Magenic.SignalRandIOT.WinApp.Windows.exe">
+      <PackagePath>Magenic.SignalRandIOT.WinApp.Windows.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\References\CommonConfiguration\neutral\Telerik.Core.dll">
+      <PackagePath>Telerik.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\References\CommonConfiguration\neutral\Telerik.UI.Xaml.Chart.dll">
+      <PackagePath>Telerik.UI.Xaml.Chart.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\References\CommonConfiguration\neutral\Telerik.UI.Xaml.DataVisualization.dll">
+      <PackagePath>Telerik.UI.Xaml.DataVisualization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\References\CommonConfiguration\neutral\Telerik.UI.Xaml.Grid.dll">
+      <PackagePath>Telerik.UI.Xaml.Grid.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\References\CommonConfiguration\neutral\Telerik.UI.Xaml.Input.dll">
+      <PackagePath>Telerik.UI.Xaml.Input.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\References\CommonConfiguration\neutral\Telerik.UI.Xaml.Primitives.dll">
+      <PackagePath>Telerik.UI.Xaml.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\SignalR and IOT\Visual Studio\Magenic.SignalRandIOT.Client\packages\Microsoft.AspNet.SignalR.Client.2.0.2\lib\portable-net45+sl5+netcore45+wp8\Microsoft.AspNet.SignalR.Client.dll">
+      <PackagePath>Microsoft.AspNet.SignalR.Client.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\SignalR and IOT\Visual Studio\Magenic.SignalRandIOT.Client\packages\Newtonsoft.Json.5.0.1\lib\netcore45\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\SignalR and IOT\Visual Studio\Magenic.SignalRandIOT.Client\packages\Microsoft.Net.Http.2.1.10\lib\win8\System.Net.Http.Extensions.dll">
+      <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\SignalR and IOT\Visual Studio\Magenic.SignalRandIOT.Client\packages\Microsoft.Net.Http.2.1.10\lib\win8\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Chart\Themes\Generic.xbf">
+      <PackagePath>Telerik.UI.Xaml.Chart\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.DataVisualization\Themes\Generic.xbf">
+      <PackagePath>Telerik.UI.Xaml.DataVisualization\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Grid\Themes\Generic.xbf">
+      <PackagePath>Telerik.UI.Xaml.Grid\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\Themes\Generic.xbf">
+      <PackagePath>Telerik.UI.Xaml.Input\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Primitives\Themes\Generic.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Primitives\Themes\ThemeColorsDark.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives\Themes\ThemeColorsDark.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Primitives\Themes\ThemeColorsLight.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives\Themes\ThemeColorsLight.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Chart\Themes\ThemeResourcesDark.xbf">
+      <PackagePath>Telerik.UI.Xaml.Chart\Themes\ThemeResourcesDark.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.DataVisualization\Themes\ThemeResourcesDark.xbf">
+      <PackagePath>Telerik.UI.Xaml.DataVisualization\Themes\ThemeResourcesDark.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Grid\Themes\ThemeResourcesDark.xbf">
+      <PackagePath>Telerik.UI.Xaml.Grid\Themes\ThemeResourcesDark.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\Themes\ThemeResourcesDark.xbf">
+      <PackagePath>Telerik.UI.Xaml.Input\Themes\ThemeResourcesDark.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Primitives\Themes\ThemeResourcesDark.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives\Themes\ThemeResourcesDark.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Chart\Themes\ThemeResourcesLight.xbf">
+      <PackagePath>Telerik.UI.Xaml.Chart\Themes\ThemeResourcesLight.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.DataVisualization\Themes\ThemeResourcesLight.xbf">
+      <PackagePath>Telerik.UI.Xaml.DataVisualization\Themes\ThemeResourcesLight.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Grid\Themes\ThemeResourcesLight.xbf">
+      <PackagePath>Telerik.UI.Xaml.Grid\Themes\ThemeResourcesLight.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Input\Themes\ThemeResourcesLight.xbf">
+      <PackagePath>Telerik.UI.Xaml.Input\Themes\ThemeResourcesLight.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\Redist\CommonConfiguration\neutral\Telerik.UI.Xaml.Primitives\Themes\ThemeResourcesLight.xbf">
+      <PackagePath>Telerik.UI.Xaml.Primitives\Themes\ThemeResourcesLight.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\SignalR and IOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\SignalR and IOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\SignalR and IOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\SignalR and IOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\SignalR and IOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\SignalR and IOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\SignalR and IOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\bin\Debug\Magenic.SignalRandIOT.WinApp.Windows.xr.xml">
+      <PackagePath>Magenic.SignalRandIOT.WinApp.Windows.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\SignalR and IOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
