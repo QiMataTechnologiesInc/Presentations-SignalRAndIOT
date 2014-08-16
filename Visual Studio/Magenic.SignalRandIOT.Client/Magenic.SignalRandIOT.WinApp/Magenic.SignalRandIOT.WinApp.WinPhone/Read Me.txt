@@ -1,0 +1,1 @@
+This project is used to showcase signalr within a windows phone 8 application.

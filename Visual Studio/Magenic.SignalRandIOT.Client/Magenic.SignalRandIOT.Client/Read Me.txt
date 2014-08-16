@@ -1,0 +1,1 @@
+This client will take in the data from the wireless controller and send it to the signalr hubs.

@@ -1,0 +1,1 @@
+This project is for showcasing Telerik controls with a signalr hub feed.

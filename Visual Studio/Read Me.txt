@@ -1,0 +1,1 @@
+These projects are to showcase common usage scenarios involving the signalr libraries.

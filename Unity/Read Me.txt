@@ -1,0 +1,1 @@
+This unity project is just to showcase the ability to use signalr within a project easily when it can not use signalr libraries directly.

@@ -1,0 +1,1 @@
+This project is used to both setup the signalr hub and showcase the telerik web controls utilizing the signalr hub.
