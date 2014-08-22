@@ -1,0 +1,11 @@
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Client\bin\Release\Magenic.SignalRandIOT.Client.exe.config
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Client\bin\Release\Magenic.SignalRandIOT.Client.exe
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Client\bin\Release\Magenic.SignalRandIOT.Client.pdb
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Client\bin\Release\Microsoft.AspNet.SignalR.Client.dll
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Client\bin\Release\Newtonsoft.Json.dll
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Client\bin\Release\Topshelf.dll
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Client\bin\Release\Microsoft.AspNet.SignalR.Client.xml
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Client\bin\Release\Newtonsoft.Json.xml
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Client\obj\Release\Magenic.SignalRandIOT.Client.csprojResolveAssemblyReference.cache
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Client\obj\Release\Magenic.SignalRandIOT.Client.exe
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Client\obj\Release\Magenic.SignalRandIOT.Client.pdb

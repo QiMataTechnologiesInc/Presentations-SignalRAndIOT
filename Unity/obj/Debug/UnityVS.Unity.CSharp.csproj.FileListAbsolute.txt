@@ -8,3 +8,12 @@ C:\Git\SignalR and IOT\Unity\Temp\UnityVS_bin\Debug\UnityEditor.xml
 C:\Git\SignalR and IOT\Unity\obj\Debug\UnityVS.Unity.CSharp.csprojResolveAssemblyReference.cache
 C:\Git\SignalR and IOT\Unity\obj\Debug\Assembly-CSharp.dll
 C:\Git\SignalR and IOT\Unity\obj\Debug\Assembly-CSharp.pdb
+C:\Git\Presentations-SignalRAndIOT\Unity\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+C:\Git\Presentations-SignalRAndIOT\Unity\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+C:\Git\Presentations-SignalRAndIOT\Unity\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\Git\Presentations-SignalRAndIOT\Unity\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\Git\Presentations-SignalRAndIOT\Unity\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\Git\Presentations-SignalRAndIOT\Unity\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\Git\Presentations-SignalRAndIOT\Unity\obj\Debug\UnityVS.Unity.CSharp.csprojResolveAssemblyReference.cache
+C:\Git\Presentations-SignalRAndIOT\Unity\obj\Debug\Assembly-CSharp.dll
+C:\Git\Presentations-SignalRAndIOT\Unity\obj\Debug\Assembly-CSharp.pdb

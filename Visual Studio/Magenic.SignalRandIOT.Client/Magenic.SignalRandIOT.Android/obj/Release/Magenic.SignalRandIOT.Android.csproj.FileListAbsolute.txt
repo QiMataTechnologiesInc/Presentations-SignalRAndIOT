@@ -1,0 +1,17 @@
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Android\bin\Release\Magenic.SignalRandIOT.Android.dll
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Android\bin\Release\Magenic.SignalRandIOT.Android.pdb
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Android\bin\Release\Magenic.SignalRandIOT.Android.apk
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Android\bin\Release\Magenic.SignalRandIOT.Android-Signed.apk
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Android\bin\Release\Microsoft.AspNet.SignalR.Client.dll
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Android\bin\Release\Newtonsoft.Json.dll
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Android\bin\Release\System.Net.Http.Extensions.dll
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Android\bin\Release\System.Net.Http.Primitives.dll
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Android\obj\Release\Magenic.SignalRandIOT.Android.csprojResolveAssemblyReference.cache
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Android\obj\Release\Magenic.SignalRandIOT.Android.dll
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Android\obj\Release\Magenic.SignalRandIOT.Android.pdb
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Android\obj\Release\android\bin\Magenic.SignalRandIOT.Android.apk
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Android\obj\Release\res\layout\main.xml
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Android\obj\Release\res\values\strings.xml
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Android\obj\Release\res\drawable\icon.png
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Android\obj\Release\R.cs.flag
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Android\obj\Release\uploadflags.txt

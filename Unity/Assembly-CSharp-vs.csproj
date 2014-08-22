@@ -48,8 +48,14 @@
   <ItemGroup>
      <Compile Include="Assets\DataDeviceClient.cs" />
      <None Include="Assets\Rabbid\ReadMe.txt" />
- <Reference Include="websocket-sharp">
- <HintPath>C:/Git/SignalR and IOT/Unity/Assets/websocket-sharp.dll</HintPath>
+ <Reference Include="Nivot.SignalR.Client.Net35">
+ <HintPath>C:/Git/Presentations-SignalRAndIOT/Unity/Assets/Nivot.SignalR.Client.Net35.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>C:/Git/Presentations-SignalRAndIOT/Unity/Assets/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading">
+ <HintPath>C:/Git/Presentations-SignalRAndIOT/Unity/Assets/System.Threading.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

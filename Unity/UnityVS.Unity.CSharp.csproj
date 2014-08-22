@@ -46,14 +46,22 @@
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="websocket-sharp">
-      <HintPath>Assets\websocket-sharp.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Nivot.SignalR.Client.Net35">
+      <HintPath>Assets\Nivot.SignalR.Client.Net35.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>Assets\System.Threading.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\DataDeviceClient.cs" />
     <None Include="Assets\Rabbid\ReadMe.txt" />
-    <None Include="Assets\websocket-sharp.dll" />
+    <None Include="Assets\Newtonsoft.Json.dll" />
+    <None Include="Assets\Nivot.SignalR.Client.Net35.dll" />
+    <None Include="Assets\System.Threading.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>
