@@ -5,9 +5,17 @@
              xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
              HorizontalAlignment="Center" VerticalAlignment="Center">
 	<Grid>
-		<telerik:RadRadialGauge Width="220" Height="220">
-			<telerik:RadialScale Min="0" Max="60" 
-									 MajorTickStep="6"
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel VerticalAlignment="Center" Grid.Column="0">
+            <Label FontSize="25" HorizontalAlignment="Center">Tempature</Label>
+		<telerik:RadRadialGauge Height="220">
+			<telerik:RadialScale Min="0" Max="100" 
+									 MajorTickStep="10"
 									 RangeLocation="Outside"
 									 Radius="0.99"
 									 LabelRotationMode="None"
@@ -19,16 +27,104 @@
 								EndWidth="0.01"
 								Background="#FFA3A3A3" />
 					<telerik:GaugeRange
-								Min="44" Max="60"
+								Min="76" Max="100"
 								StartWidth="0.01"
 								EndWidth="0.01"
 								Background="#FFE50000" />
 				</telerik:RadialScale.Ranges>
                 <telerik:RadialScale.Indicators>
-                    <telerik:Needle x:Name="needle" Value="6" IsAnimated="True" />
+                    <telerik:Needle x:Name="tempature_needle" Value="6" IsAnimated="True" />
                     <telerik:Pinpoint />
                 </telerik:RadialScale.Indicators>
             </telerik:RadialScale>
 		</telerik:RadRadialGauge>
-	</Grid>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+            <Label FontSize="25" HorizontalAlignment="Center">Humidity</Label>
+        <telerik:RadRadialGauge Height="220">
+            <telerik:RadialScale Min="0" Max="60" 
+									 MajorTickStep="6"
+									 RangeLocation="Outside"
+									 Radius="0.99"
+									 LabelRotationMode="None"
+									 LabelFormat="{}{00}">
+                <telerik:RadialScale.Ranges>
+                    <telerik:GaugeRange
+								Min="0" Max="40"
+								StartWidth="0.01"
+								EndWidth="0.01"
+								Background="#FFA3A3A3" />
+                    <telerik:GaugeRange
+								Min="44" Max="60"
+								StartWidth="0.01"
+								EndWidth="0.01"
+								Background="#FFE50000" />
+                </telerik:RadialScale.Ranges>
+                <telerik:RadialScale.Indicators>
+                    <telerik:Needle x:Name="humidity_needle" Value="6" IsAnimated="True" />
+                    <telerik:Pinpoint />
+                </telerik:RadialScale.Indicators>
+            </telerik:RadialScale>
+        </telerik:RadRadialGauge>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" VerticalAlignment="Center">
+            <Label FontSize="25" HorizontalAlignment="Center">Light</Label>
+            <telerik:RadRadialGauge Height="220">
+            <telerik:RadialScale Min="0" Max="60" 
+									 MajorTickStep="6"
+									 RangeLocation="Outside"
+									 Radius="0.99"
+									 LabelRotationMode="None"
+									 LabelFormat="{}{00}">
+                <telerik:RadialScale.Ranges>
+                    <telerik:GaugeRange
+								Min="0" Max="40"
+								StartWidth="0.01"
+								EndWidth="0.01"
+								Background="#FFA3A3A3" />
+                    <telerik:GaugeRange
+								Min="44" Max="60"
+								StartWidth="0.01"
+								EndWidth="0.01"
+								Background="#FFE50000" />
+                </telerik:RadialScale.Ranges>
+                <telerik:RadialScale.Indicators>
+                    <telerik:Needle x:Name="light_needle" Value="6" IsAnimated="True" />
+                    <telerik:Pinpoint />
+                </telerik:RadialScale.Indicators>
+            </telerik:RadialScale>
+        </telerik:RadRadialGauge>
+        </StackPanel>
+
+        <StackPanel Grid.Column="3" VerticalAlignment="Center">
+            <Label FontSize="25" HorizontalAlignment="Center">Distance</Label>
+        <telerik:RadRadialGauge Height="220" >
+            <telerik:RadialScale Min="0" Max="60" 
+									 MajorTickStep="6"
+									 RangeLocation="Outside"
+					             Radius="0.99"
+									 LabelRotationMode="None"
+									 LabelFormat="{}{00}">
+                <telerik:RadialScale.Ranges>
+                    <telerik:GaugeRange
+								Min="0" Max="40"
+								StartWidth="0.01"
+								EndWidth="0.01"
+								Background="#FFA3A3A3" />
+                    <telerik:GaugeRange
+								Min="44" Max="60"
+								StartWidth="0.01"
+								EndWidth="0.01"
+								Background="#FFE50000" />
+                </telerik:RadialScale.Ranges>
+                <telerik:RadialScale.Indicators>
+                    <telerik:Needle x:Name="distance_needle" Value="6" IsAnimated="True" />
+                    <telerik:Pinpoint />
+                </telerik:RadialScale.Indicators>
+            </telerik:RadialScale>
+        </telerik:RadRadialGauge>
+        </StackPanel>
+    </Grid>
 </Window>

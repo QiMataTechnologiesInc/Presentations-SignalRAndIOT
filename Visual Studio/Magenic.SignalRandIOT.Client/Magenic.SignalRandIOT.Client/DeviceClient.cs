@@ -23,7 +23,7 @@ namespace Magenic.SignalRandIOT.Client
             _deviceHubProxy = _hubConnection.CreateHubProxy(ConfigurationManager.AppSettings["DeviceHubName"]);
 
             //setup and open port
-            _port = new SerialPort("COM6", 9600);
+            _port = new SerialPort("COM8", 9600);
             _port.DataReceived += _port_DataReceived;
             
         }

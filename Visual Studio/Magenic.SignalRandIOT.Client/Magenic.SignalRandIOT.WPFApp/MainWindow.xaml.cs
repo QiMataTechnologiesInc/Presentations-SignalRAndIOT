@@ -30,7 +30,26 @@ namespace Magenic.SignalRandIOT.WPFApp
         {
             _hubConnection = new HubConnection(ConfigurationManager.AppSettings["SignalRLocation"]);
             _deviceHubProxy = _hubConnection.CreateHubProxy(ConfigurationManager.AppSettings["DeviceHubName"]);
-            _deviceHubProxy.On<DeviceData>("NewDataRecieved", x => { this.Dispatcher.Invoke(() => { this.needle.Value = x.DataValue; }); });
+            _deviceHubProxy.On<DeviceData>("NewDataRecieved", x => { this.Dispatcher.Invoke(() => 
+                {
+                    if(x.DataType == "Temperature")
+                    {
+                        this.tempature_needle.Value = x.DataValue; 
+                    }
+                    else if (x.DataType == "Humidity")
+                    {
+                        this.humidity_needle.Value = x.DataValue; 
+                    }
+                    else if (x.DataType == "Light")
+                    {
+                        this.light_needle.Value = x.DataValue; 
+                    }
+                    else if (x.DataType == "Distance")
+                    {
+                        this.distance_needle.Value = x.DataValue; 
+                    }
+                });
+            });
             InitializeComponent();
             this._hubConnection.Start().Wait();
         }

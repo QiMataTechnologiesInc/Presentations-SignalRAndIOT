@@ -29,13 +29,28 @@ namespace Magenic.SignalRandIOT.WinApp
 
         public MainPage()
         {
-            _hubConnection = new HubConnection("http://localhost:56621");
+            _hubConnection = new HubConnection("http://signalrandiot.azurewebsites.net");
             _deviceHubProxy = _hubConnection.CreateHubProxy("DeviceDataHub");
             _deviceHubProxy.On<DeviceData>("NewDataRecieved",async x =>
             {
                 await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Low, new Windows.UI.Core.DispatchedHandler(() =>
                     {
-                        this.Gauge.Indicators[0].Value = x.DataValue;
+                        if (x.DataType == "Temperature")
+                        {
+                            this.TempatureGauge.Indicators[0].Value = x.DataValue;
+                        }
+                        else if (x.DataType == "Humidity")
+                        {
+                            this.HumidityGauge.Indicators[0].Value = x.DataValue;
+                        }
+                        else if (x.DataType == "Light")
+                        {
+                            this.LightGauge.Indicators[0].Value = x.DataValue;
+                        }
+                        else if (x.DataType == "Distance")
+                        {
+                            this.DistanceGauge.Indicators[0].Value = x.DataValue;
+                        }
                     }));
             });
             InitializeComponent();

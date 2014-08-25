@@ -1,1 +1,1 @@
-Magenic.SignalRandIOT.Android.MainActivity;magenic.signalrandiot.android.MainActivity
+Magenic.SignalRandIOT.Android.Activity1;magenic.signalrandiot.android.Activity1

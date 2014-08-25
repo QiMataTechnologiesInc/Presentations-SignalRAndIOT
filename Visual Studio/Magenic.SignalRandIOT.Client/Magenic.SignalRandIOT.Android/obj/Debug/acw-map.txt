@@ -1,1 +1,0 @@
-Magenic.SignalRandIOT.Android.MainActivity;magenic.signalrandiot.android.MainActivity

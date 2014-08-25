@@ -1,5 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\git\presentations-signalrandiot\visual studio\magenic.signalrandiot.client\magenic.signalrandiot.winapp\magenic.signalrandiot.winapp.windows\obj\x86\release\intermediatexaml\magenic.signalrandiot.winapp.windows.exe" HashGuid="a2a29c91-387c-14ed-321a-696899b41358" />
     <ReferenceAssembly PathName="c:\program files (x86)\telerik\ui for windows 8.1 xaml q2 2014\extensionsdks\core\references\commonconfiguration\neutral\telerik.core.dll" HashGuid="6671babb-4f09-d0f5-12c3-92577b0b7077" />
     <ReferenceAssembly PathName="c:\program files (x86)\telerik\ui for windows 8.1 xaml q2 2014\extensionsdks\core\references\commonconfiguration\neutral\telerik.ui.xaml.chart.dll" HashGuid="c08860fa-e604-dcc7-10b0-cbedae213c9e" />
     <ReferenceAssembly PathName="c:\program files (x86)\telerik\ui for windows 8.1 xaml q2 2014\extensionsdks\core\references\commonconfiguration\neutral\telerik.ui.xaml.datavisualization.dll" HashGuid="88331b4f-c525-58f2-2c32-59ae74e66fa9" />

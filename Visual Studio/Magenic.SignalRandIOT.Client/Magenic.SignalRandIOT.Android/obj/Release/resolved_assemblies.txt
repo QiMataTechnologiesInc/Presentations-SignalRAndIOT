@@ -1,12 +1,12 @@
 C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.Android\bin\Release\Magenic.SignalRandIOT.Android.dll
-C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Xamarin Packages\signalr-2.1.1\lib\android\Microsoft.AspNet.SignalR.Client.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v3.1\Mono.Android.dll
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\packages\Microsoft.AspNet.SignalR.Client.2.0.2\lib\portable-net45+sl5+netcore45+wp8\Microsoft.AspNet.SignalR.Client.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v2.3\Mono.Android.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\mscorlib.dll
-C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Xamarin Packages\signalr-2.1.1\lib\android\Newtonsoft.Json.dll
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\packages\Newtonsoft.Json.5.0.1\lib\portable-net45+wp80+win8\Newtonsoft.Json.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\System.Core.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\System.dll
-C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Xamarin Packages\signalr-2.1.1\lib\android\System.Net.Http.Extensions.dll
-C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Xamarin Packages\signalr-2.1.1\lib\android\System.Net.Http.Primitives.dll
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\packages\Microsoft.Net.Http.2.1.10\lib\portable-net45+win8\System.Net.Http.Extensions.dll
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\packages\Microsoft.Net.Http.2.1.10\lib\portable-net45+win8\System.Net.Http.Primitives.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\System.Xml.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\System.Xml.Linq.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.Concurrent.dll

@@ -23,13 +23,28 @@ namespace Magenic.SignalRandIOT.WinApp.WinPhone
         // Constructor
         public MainPage()
         {
-            _hubConnection = new HubConnection("http://localhost:56621");
+            _hubConnection = new HubConnection("http://signalrandiot.azurewebsites.net");
             _deviceHubProxy = _hubConnection.CreateHubProxy("DeviceDataHub");
             _deviceHubProxy.On<DeviceData>("NewDataRecieved", x =>
             {
                 Dispatcher.BeginInvoke(() => 
                 {
-                    ((ArrowGaugeIndicator)this.Gauge.Indicators.Single(y => y.GetType() == typeof(ArrowGaugeIndicator))).Value = x.DataValue;
+                    if (x.DataType == "Temperature")
+                    {
+                        ((ArrowGaugeIndicator)this.TempatureGauge.Indicators.Single(y => y.GetType() == typeof(ArrowGaugeIndicator))).Value = x.DataValue;
+                    }
+                    else if (x.DataType == "Humidity")
+                    {
+                        ((ArrowGaugeIndicator)this.HumidityGauge.Indicators.Single(y => y.GetType() == typeof(ArrowGaugeIndicator))).Value = x.DataValue;
+                    }
+                    else if (x.DataType == "Light")
+                    {
+                        ((ArrowGaugeIndicator)this.LightGauge.Indicators.Single(y => y.GetType() == typeof(ArrowGaugeIndicator))).Value = x.DataValue;
+                    }
+                    else if (x.DataType == "Distance")
+                    {
+                        ((ArrowGaugeIndicator)this.DistanceGauge.Indicators.Single(y => y.GetType() == typeof(ArrowGaugeIndicator))).Value = x.DataValue;
+                    }
                 });
                 
             });

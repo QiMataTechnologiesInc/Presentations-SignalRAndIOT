@@ -32,7 +32,7 @@ public class TrialSplashScreen extends Activity {
 			public void run ()
 			{
 				finish ();
-				Intent intent = new Intent (TrialSplashScreen.this, magenic.signalrandiot.android.MainActivity.class);
+				Intent intent = new Intent (TrialSplashScreen.this, magenic.signalrandiot.android.Activity1.class);
 				intent.setFlags (Intent.FLAG_ACTIVITY_NEW_TASK);
 				startActivity (intent);
 			}

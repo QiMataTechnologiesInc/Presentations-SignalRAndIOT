@@ -14,6 +14,8 @@ C:\Git\Presentations-SignalRAndIOT\Unity\Temp\UnityVS_bin\Debug\UnityEditor.dll
 C:\Git\Presentations-SignalRAndIOT\Unity\Temp\UnityVS_bin\Debug\UnityEngine.dll
 C:\Git\Presentations-SignalRAndIOT\Unity\Temp\UnityVS_bin\Debug\UnityEngine.xml
 C:\Git\Presentations-SignalRAndIOT\Unity\Temp\UnityVS_bin\Debug\UnityEditor.xml
-C:\Git\Presentations-SignalRAndIOT\Unity\obj\Debug\UnityVS.Unity.CSharp.csprojResolveAssemblyReference.cache
 C:\Git\Presentations-SignalRAndIOT\Unity\obj\Debug\Assembly-CSharp.dll
 C:\Git\Presentations-SignalRAndIOT\Unity\obj\Debug\Assembly-CSharp.pdb
+C:\Git\Presentations-SignalRAndIOT\Unity\Temp\UnityVS_bin\Debug\websocket-sharp.dll
+C:\Git\Presentations-SignalRAndIOT\Unity\Temp\UnityVS_bin\Debug\Newtonsoft.Json.dll
+C:\Git\Presentations-SignalRAndIOT\Unity\obj\Debug\UnityVS.Unity.CSharp.csprojResolveAssemblyReference.cache
