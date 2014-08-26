@@ -13,5 +13,11 @@ namespace Magenic.SignalRanIOT.Server.Hubs
         {
             Clients.All.NewDataRecieved(deviceData);
         }
+
+        public override System.Threading.Tasks.Task OnConnected()
+        {
+            this.Context.ConnectionId
+            return base.OnConnected();
+        }
     }
 }

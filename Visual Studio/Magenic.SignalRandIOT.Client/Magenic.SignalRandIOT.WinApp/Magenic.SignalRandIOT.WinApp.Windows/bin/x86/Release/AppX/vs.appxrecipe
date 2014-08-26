@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\bin\x86\Release\Magenic.SignalRandIOT.WinApp.Windows.exe">
       <PackagePath>Magenic.SignalRandIOT.WinApp.Windows.exe</PackagePath>
-      <Modified>2014-08-23T20:41:45.166</Modified>
+      <Modified>2014-08-25T12:54:12.308</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Telerik\UI for Windows 8.1 XAML Q2 2014\ExtensionSDKs\Core\References\CommonConfiguration\neutral\Telerik.Core.dll">
       <PackagePath>Telerik.Core.dll</PackagePath>
@@ -162,7 +162,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\bin\x86\Release\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-08-23T20:41:43.984</Modified>
+      <Modified>2014-08-25T12:54:11.666</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\bin\x86\Release\Magenic.SignalRandIOT.WinApp.Windows.xr.xml">
       <PackagePath>Magenic.SignalRandIOT.WinApp.Windows.xr.xml</PackagePath>
@@ -170,7 +170,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-08-23T15:52:09.088</Modified>
+      <Modified>2014-08-25T12:54:12.633</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

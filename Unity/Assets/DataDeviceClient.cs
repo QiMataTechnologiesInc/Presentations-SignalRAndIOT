@@ -26,7 +26,6 @@ public class DataDeviceClient : MonoBehaviour {
         _sphere = GameObject.Find("Sphere");
         _client.On<DeviceData>("NewDataRecieved", new Action<DeviceData>(x =>
             {
-                UnityEngine.Debug.Log("New Data " + x.DataType);
                 _dataContainer.Add(x);
             }));
         _client.Open();
@@ -39,14 +38,14 @@ public class DataDeviceClient : MonoBehaviour {
             switch(deviceData.DataType)
             {
                 case "Temperature":
-                    _sphere.GetComponent<ParticleSystem>().enableEmission = deviceData.DataValue > 36;
+                    _sphere.GetComponent<ParticleSystem>().enableEmission = deviceData.DataValue > 90;
                     break;
                 case "Light":
-                    _directionalLight.intensity = deviceData.DataValue - 32;
+                    _directionalLight.intensity = (deviceData.DataValue - 110f) / 35f;
                     break;
                 case "Distance":
                     _mainCamera.transform.position = new Vector3(_mainCamera.transform.position.x,
-                        _mainCamera.transform.position.y, deviceData.DataValue / 10 * -1);
+                        _mainCamera.transform.position.y, (deviceData.DataValue / 10 +3) * -1);
                     break;
             }
         }

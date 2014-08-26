@@ -72,8 +72,8 @@
         <StackPanel Grid.Column="2" VerticalAlignment="Center">
             <Label FontSize="25" HorizontalAlignment="Center">Light</Label>
             <telerik:RadRadialGauge Height="220">
-            <telerik:RadialScale Min="0" Max="60" 
-									 MajorTickStep="6"
+            <telerik:RadialScale Min="0" Max="200" 
+									 MajorTickStep="20"
 									 RangeLocation="Outside"
 									 Radius="0.99"
 									 LabelRotationMode="None"
@@ -101,8 +101,8 @@
         <StackPanel Grid.Column="3" VerticalAlignment="Center">
             <Label FontSize="25" HorizontalAlignment="Center">Distance</Label>
         <telerik:RadRadialGauge Height="220" >
-            <telerik:RadialScale Min="0" Max="60" 
-									 MajorTickStep="6"
+            <telerik:RadialScale Min="0" Max="200" 
+									 MajorTickStep="20"
 									 RangeLocation="Outside"
 					             Radius="0.99"
 									 LabelRotationMode="None"

@@ -89,3 +89,11 @@ C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Ma
 C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\obj\x86\Release\qualifiers.txt.intermediate
 C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\obj\x86\Release\MultipleQualifiersPerDimensionFound.txt
 C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\obj\x86\Release\ProjectArchitectures.txt
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\obj\x86\Release\Microsoft.AspNet.SignalR.Client\layout.resfiles
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\obj\x86\Release\Microsoft.AspNet.SignalR.Client\layout.resfiles.intermediate
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\obj\x86\Release\Microsoft.AspNet.SignalR.Client\Resources.resfiles
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\obj\x86\Release\Microsoft.AspNet.SignalR.Client\Resources.resfiles.intermediate
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\obj\x86\Release\Microsoft.AspNet.SignalR.Client\pri.resfiles
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\obj\x86\Release\Microsoft.AspNet.SignalR.Client\pri.resfiles.intermediate
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\obj\x86\Release\Microsoft.AspNet.SignalR.Client\priconfig.xml
+C:\Git\Presentations-SignalRAndIOT\Visual Studio\Magenic.SignalRandIOT.Client\Magenic.SignalRandIOT.WinApp\Magenic.SignalRandIOT.WinApp.Windows\obj\x86\Release\Microsoft.AspNet.SignalR.Client\priconfig.xml.intermediate

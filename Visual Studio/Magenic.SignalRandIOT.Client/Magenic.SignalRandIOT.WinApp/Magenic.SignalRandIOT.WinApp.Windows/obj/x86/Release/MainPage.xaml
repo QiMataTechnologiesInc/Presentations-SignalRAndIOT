@@ -41,10 +41,10 @@
         </StackPanel>
         <StackPanel VerticalAlignment="Center" Grid.Column="2">
             <TextBlock FontSize="25" HorizontalAlignment="Center">Light</TextBlock>
-            <telerik:RadRadialGauge Height="200" MinValue="0" MaxValue="60" MaxAngle="270" MinAngle="0" LabelRadiusScale="1.10"
-                                    TickStep="10" LabelStep="20" x:Name="LightGauge">
+            <telerik:RadRadialGauge Height="200" MinValue="0" MaxValue="200" MaxAngle="270" MinAngle="0" LabelRadiusScale="1.10"
+                                    TickStep="10" LabelStep="50" x:Name="LightGauge">
                 <telerik:ArrowGaugeIndicator Brush="Green" Thickness="3" ArrowTailRadius="2" Value="10"/>
-                <telerik:SegmentedRadialGaugeIndicator Value="120">
+                <telerik:SegmentedRadialGaugeIndicator Value="200">
                     <telerik:BarIndicatorSegment Stroke="Green" Length="3"/>
                     <telerik:BarIndicatorSegment Stroke="Yellow" Length="2" />
                     <telerik:BarIndicatorSegment Stroke="Red" Length="1" />
@@ -53,10 +53,10 @@
         </StackPanel>
         <StackPanel VerticalAlignment="Center" Grid.Column="3">
             <TextBlock FontSize="25" HorizontalAlignment="Center">Distance</TextBlock>
-            <telerik:RadRadialGauge Height="200" MinValue="0" MaxValue="60" MaxAngle="270" MinAngle="0" LabelRadiusScale="1.10"
-                                    TickStep="10" LabelStep="20" x:Name="DistanceGauge">
+            <telerik:RadRadialGauge Height="200" MinValue="0" MaxValue="200" MaxAngle="270" MinAngle="0" LabelRadiusScale="1.10"
+                                    TickStep="10" LabelStep="50" x:Name="DistanceGauge">
                 <telerik:ArrowGaugeIndicator Brush="Green" Thickness="3" ArrowTailRadius="2" Value="10"/>
-                <telerik:SegmentedRadialGaugeIndicator Value="120">
+                <telerik:SegmentedRadialGaugeIndicator Value="200">
                     <telerik:BarIndicatorSegment Stroke="Green" Length="3"/>
                     <telerik:BarIndicatorSegment Stroke="Yellow" Length="2" />
                     <telerik:BarIndicatorSegment Stroke="Red" Length="1" />

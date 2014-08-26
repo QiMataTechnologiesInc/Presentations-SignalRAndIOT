@@ -129,30 +129,8 @@
             </StackPanel.RenderTransform>
         </StackPanel>
 
-        <gauges:RadialGaugeRange Grid.Row="2" MaxValue="120" MaxAngle="115" LabelStep="20" TickStep="20" TickRadiusScale="0.60" LabelRadiusScale="0.50" SweepDirection="Counterclockwise" Height="400" Width="400" x:Name="range4">
-            <gauges:RadialGaugeRange.TickTemplate>
-                <DataTemplate>
-                    <Rectangle Width="10" Height="2" Fill="{Binding Converter={StaticResource converter3}}" />
-                </DataTemplate>
-            </gauges:RadialGaugeRange.TickTemplate>
-            <gauges:RadialGaugeRange.LabelTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding}" FontSize="12" Foreground="{Binding Converter={StaticResource converter2}}" FontWeight="Bold" />
-                </DataTemplate>
-            </gauges:RadialGaugeRange.LabelTemplate>
-            <gauges:SegmentedRadialGaugeIndicator Value="120" gauges:RadialGaugeRange.MaxAngle="115.5" gauges:RadialGaugeRange.IndicatorRadiusScale="0.63">
-                <gauges:BarIndicatorSegment Thickness="4" Length="0.8" Stroke="#FF005676" />
-                <gauges:BarIndicatorSegment Thickness="4" Length="4" Stroke="{StaticResource PhoneAccentBrush}" />
-            </gauges:SegmentedRadialGaugeIndicator>
-            <gauges:MarkerGaugeIndicator Value="60" gauges:RadialGaugeRange.MaxAngle="115" gauges:RadialGaugeRange.SweepDirection="Counterclockwise" gauges:RadialGaugeRange.IndicatorRadiusScale="0.5" IsMarkerRotated="False">
-                <gauges:MarkerGaugeIndicator.MarkerTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="%" FontSize="17" Foreground="{StaticResource PhoneAccentBrush}" />
-                    </DataTemplate>
-                </gauges:MarkerGaugeIndicator.MarkerTemplate>
-            </gauges:MarkerGaugeIndicator>
-        </gauges:RadialGaugeRange>
-        <gauges:RadialGaugeRange Grid.Row="2" MaxAngle="180" MaxValue="60" x:Name="LightGauge" TickStep="3.35" LabelStep="10" LabelRadiusScale="0.86" TickRadiusScale="0.78" Width="400" Height="400">
+        <gauges:RadialGaugeRange Grid.Row="2" MaxAngle="180" MaxValue="200" x:Name="LightGauge" TickStep="3.35" 
+                                 LabelStep="50" LabelRadiusScale="0.86" TickRadiusScale="0.78" Width="400" Height="400">
             <gauges:RadialGaugeRange.TickTemplate>
                 <DataTemplate>
                     <Rectangle Width="10" Height="2" Fill="{Binding Converter={StaticResource converter1}}" />
@@ -163,50 +141,23 @@
                     <TextBlock Text="{Binding}" Foreground="{Binding Converter={StaticResource converter1}}" FontWeight="Bold" FontSize="17" />
                 </DataTemplate>
             </gauges:RadialGaugeRange.LabelTemplate>
-            <gauges:SegmentedRadialGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.78" Value="60">
+            <gauges:SegmentedRadialGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.78" Value="200">
                 <gauges:BarIndicatorSegment Length="1.05" Thickness="2" Stroke="#FFCCCCCC" />
                 <gauges:BarIndicatorSegment Length="1" Thickness="2" Stroke="Gray" />
                 <gauges:BarIndicatorSegment Length="1.1" Thickness="2" Stroke="Red" />
             </gauges:SegmentedRadialGaugeIndicator>
-            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.78" Value="40" MarkerTemplate="{StaticResource redCircleTemplate}" />
-            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.78" Value="60" MarkerTemplate="{StaticResource redCircleTemplate}" />
-            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.90" Value="40" IsMarkerRotated="False" MarkerTemplate="{StaticResource redLabelTemplate}" />
-            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.90" Value="60" IsMarkerRotated="False" MarkerTemplate="{StaticResource redLabelTemplate}" />
-            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.78" Value="54" x:Name="indicator6" IsAnimated="True" MarkerTemplate="{StaticResource rhombTemplate}" />
-            <gauges:ArrowGaugeIndicator x:Name="indicator7" ArrowBrush="{StaticResource PhoneForegroundBrush}" gauges:RadialGaugeRange.IndicatorRadiusScale="0.73" gauges:RadialGaugeRange.MaxAngle="180" ArrowThickness="2" ArrowTailRadius="1.2" Value="23.66" IsAnimated="True" />
+            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.78" Value="140" MarkerTemplate="{StaticResource redCircleTemplate}" />
+            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.78" Value="200" MarkerTemplate="{StaticResource redCircleTemplate}" />
+            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.90" Value="140" IsMarkerRotated="False" MarkerTemplate="{StaticResource redLabelTemplate}" />
+            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.90" Value="200" IsMarkerRotated="False" MarkerTemplate="{StaticResource redLabelTemplate}" />
+            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.78" Value="180" x:Name="indicator6" IsAnimated="True" MarkerTemplate="{StaticResource rhombTemplate}" />
+            <gauges:ArrowGaugeIndicator x:Name="indicator7" ArrowBrush="{StaticResource PhoneForegroundBrush}" gauges:RadialGaugeRange.IndicatorRadiusScale="0.73" gauges:RadialGaugeRange.MaxAngle="180" ArrowThickness="2" ArrowTailRadius="1.2" Value="70" IsAnimated="True" />
         </gauges:RadialGaugeRange>
-        <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Text="{Binding Path=ActualValue, ElementName=indicator2}" FontWeight="Bold" FontSize="18" Width="50" />
-            <TextBlock Text="%8.3" HorizontalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" FontWeight="Bold" FontSize="15" Margin="0, -5, 0, 0" x:Name="percentText3" />
-            <StackPanel.RenderTransform>
-                <TranslateTransform Y="20" />
-            </StackPanel.RenderTransform>
-        </StackPanel>
 
-        <gauges:RadialGaugeRange Grid.Row="3" MaxValue="120" MaxAngle="115" LabelStep="20" TickStep="20" TickRadiusScale="0.60" LabelRadiusScale="0.50" SweepDirection="Counterclockwise" Height="400" Width="400" x:Name="range5">
-            <gauges:RadialGaugeRange.TickTemplate>
-                <DataTemplate>
-                    <Rectangle Width="10" Height="2" Fill="{Binding Converter={StaticResource converter3}}" />
-                </DataTemplate>
-            </gauges:RadialGaugeRange.TickTemplate>
-            <gauges:RadialGaugeRange.LabelTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding}" FontSize="12" Foreground="{Binding Converter={StaticResource converter2}}" FontWeight="Bold" />
-                </DataTemplate>
-            </gauges:RadialGaugeRange.LabelTemplate>
-            <gauges:SegmentedRadialGaugeIndicator Value="120" gauges:RadialGaugeRange.MaxAngle="115.5" gauges:RadialGaugeRange.IndicatorRadiusScale="0.63">
-                <gauges:BarIndicatorSegment Thickness="4" Length="0.8" Stroke="#FF005676" />
-                <gauges:BarIndicatorSegment Thickness="4" Length="4" Stroke="{StaticResource PhoneAccentBrush}" />
-            </gauges:SegmentedRadialGaugeIndicator>
-            <gauges:MarkerGaugeIndicator Value="60" gauges:RadialGaugeRange.MaxAngle="115" gauges:RadialGaugeRange.SweepDirection="Counterclockwise" gauges:RadialGaugeRange.IndicatorRadiusScale="0.5" IsMarkerRotated="False">
-                <gauges:MarkerGaugeIndicator.MarkerTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="%" FontSize="17" Foreground="{StaticResource PhoneAccentBrush}" />
-                    </DataTemplate>
-                </gauges:MarkerGaugeIndicator.MarkerTemplate>
-            </gauges:MarkerGaugeIndicator>
-        </gauges:RadialGaugeRange>
-        <gauges:RadialGaugeRange Grid.Row="3" MaxAngle="180" MaxValue="60" x:Name="DistanceGauge" TickStep="3.35" LabelStep="10" LabelRadiusScale="0.86" TickRadiusScale="0.78" Width="400" Height="400">
+        <gauges:RadialGaugeRange Grid.Row="3" MaxAngle="180" MaxValue="200" x:Name="DistanceGauge" 
+                                 TickStep="3.35" LabelStep="50" 
+                                 LabelRadiusScale="0.86" TickRadiusScale="0.78" 
+                                 Width="400" Height="400">
             <gauges:RadialGaugeRange.TickTemplate>
                 <DataTemplate>
                     <Rectangle Width="10" Height="2" Fill="{Binding Converter={StaticResource converter1}}" />
@@ -217,25 +168,18 @@
                     <TextBlock Text="{Binding}" Foreground="{Binding Converter={StaticResource converter1}}" FontWeight="Bold" FontSize="17" />
                 </DataTemplate>
             </gauges:RadialGaugeRange.LabelTemplate>
-            <gauges:SegmentedRadialGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.78" Value="60">
+            <gauges:SegmentedRadialGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.78" Value="200">
                 <gauges:BarIndicatorSegment Length="1.05" Thickness="2" Stroke="#FFCCCCCC" />
                 <gauges:BarIndicatorSegment Length="1" Thickness="2" Stroke="Gray" />
                 <gauges:BarIndicatorSegment Length="1.1" Thickness="2" Stroke="Red" />
             </gauges:SegmentedRadialGaugeIndicator>
-            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.78" Value="40" MarkerTemplate="{StaticResource redCircleTemplate}" />
-            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.78" Value="60" MarkerTemplate="{StaticResource redCircleTemplate}" />
-            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.90" Value="40" IsMarkerRotated="False" MarkerTemplate="{StaticResource redLabelTemplate}" />
-            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.90" Value="60" IsMarkerRotated="False" MarkerTemplate="{StaticResource redLabelTemplate}" />
-            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.78" Value="54" x:Name="indicator8" IsAnimated="True" MarkerTemplate="{StaticResource rhombTemplate}" />
+            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.78" Value="130" MarkerTemplate="{StaticResource redCircleTemplate}" />
+            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.78" Value="200" MarkerTemplate="{StaticResource redCircleTemplate}" />
+            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.90" Value="130" IsMarkerRotated="False" MarkerTemplate="{StaticResource redLabelTemplate}" />
+            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.90" Value="200" IsMarkerRotated="False" MarkerTemplate="{StaticResource redLabelTemplate}" />
+            <gauges:MarkerGaugeIndicator gauges:RadialGaugeRange.MaxAngle="180" gauges:RadialGaugeRange.IndicatorRadiusScale="0.78" Value="180" x:Name="indicator8" IsAnimated="True" MarkerTemplate="{StaticResource rhombTemplate}" />
             <gauges:ArrowGaugeIndicator x:Name="indicator9" ArrowBrush="{StaticResource PhoneForegroundBrush}" gauges:RadialGaugeRange.IndicatorRadiusScale="0.73" gauges:RadialGaugeRange.MaxAngle="180" ArrowThickness="2" ArrowTailRadius="1.2" Value="23.66" IsAnimated="True" />
         </gauges:RadialGaugeRange>
-        <StackPanel Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Text="{Binding Path=ActualValue, ElementName=indicator2}" FontWeight="Bold" FontSize="18" Width="50" />
-            <TextBlock Text="%8.3" HorizontalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}" FontWeight="Bold" FontSize="15" Margin="0, -5, 0, 0" x:Name="percentText4" />
-            <StackPanel.RenderTransform>
-                <TranslateTransform Y="20" />
-            </StackPanel.RenderTransform>
-        </StackPanel>
     </Grid>
 </phone:PhoneApplicationPage>
 

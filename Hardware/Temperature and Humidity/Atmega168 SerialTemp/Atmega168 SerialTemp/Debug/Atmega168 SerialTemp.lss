@@ -1,0 +1,913 @@
+
+Atmega168 SerialTemp.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         0000001a  00800100  000004de  00000552  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000004de  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  0000056c  2**0
+                  CONTENTS, READONLY
+  3 .debug_aranges 00000080  00000000  00000000  0000059c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   00000cb0  00000000  00000000  0000061c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 00000449  00000000  00000000  000012cc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   0000048a  00000000  00000000  00001715  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  00000120  00000000  00000000  00001ba0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    0000033b  00000000  00000000  00001cc0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    00000b09  00000000  00000000  00001ffb  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000078  00000000  00000000  00002b04  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 34 00 	jmp	0x68	; 0x68 <__ctors_end>
+   4:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+   8:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+   c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  10:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  14:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  18:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  1c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  20:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  24:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  28:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  2c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  30:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  34:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  38:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  3c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  40:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  44:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  48:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  4c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  50:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  54:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  58:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  5c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  60:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  64:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+
+00000068 <__ctors_end>:
+  68:	11 24       	eor	r1, r1
+  6a:	1f be       	out	0x3f, r1	; 63
+  6c:	cf ef       	ldi	r28, 0xFF	; 255
+  6e:	d4 e0       	ldi	r29, 0x04	; 4
+  70:	de bf       	out	0x3e, r29	; 62
+  72:	cd bf       	out	0x3d, r28	; 61
+
+00000074 <__do_copy_data>:
+  74:	11 e0       	ldi	r17, 0x01	; 1
+  76:	a0 e0       	ldi	r26, 0x00	; 0
+  78:	b1 e0       	ldi	r27, 0x01	; 1
+  7a:	ee ed       	ldi	r30, 0xDE	; 222
+  7c:	f4 e0       	ldi	r31, 0x04	; 4
+  7e:	02 c0       	rjmp	.+4      	; 0x84 <__do_copy_data+0x10>
+  80:	05 90       	lpm	r0, Z+
+  82:	0d 92       	st	X+, r0
+  84:	aa 31       	cpi	r26, 0x1A	; 26
+  86:	b1 07       	cpc	r27, r17
+  88:	d9 f7       	brne	.-10     	; 0x80 <__do_copy_data+0xc>
+  8a:	0e 94 4b 00 	call	0x96	; 0x96 <main>
+  8e:	0c 94 6d 02 	jmp	0x4da	; 0x4da <_exit>
+
+00000092 <__bad_interrupt>:
+  92:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000096 <main>:
+
+
+#include "dht/dht.h"
+
+int main( void )
+{
+  96:	cf 93       	push	r28
+  98:	df 93       	push	r29
+  9a:	cd b7       	in	r28, 0x3d	; 61
+  9c:	de b7       	in	r29, 0x3e	; 62
+  9e:	c6 56       	subi	r28, 0x66	; 102
+  a0:	d1 09       	sbc	r29, r1
+  a2:	0f b6       	in	r0, 0x3f	; 63
+  a4:	f8 94       	cli
+  a6:	de bf       	out	0x3e, r29	; 62
+  a8:	0f be       	out	0x3f, r0	; 63
+  aa:	cd bf       	out	0x3d, r28	; 61
+	USART_Init(MYUBRR);
+  ac:	87 e6       	ldi	r24, 0x67	; 103
+  ae:	90 e0       	ldi	r25, 0x00	; 0
+  b0:	0e 94 e4 01 	call	0x3c8	; 0x3c8 <USART_Init>
+	DDRB |= (1 << LED_PIN);
+  b4:	20 9a       	sbi	0x04, 0	; 4
+	DDRB |= (1 << RELAY_PIN);
+  b6:	21 9a       	sbi	0x04, 1	; 4
+		
+	//char * helloWorld = "Hello World!\r\n";
+	const char printbuff[100];
+
+	#if DHT_FLOAT == 0
+	int8_t temperature = 0;
+  b8:	a6 96       	adiw	r28, 0x26	; 38
+  ba:	1f ae       	std	Y+63, r1	; 0x3f
+  bc:	a6 97       	sbiw	r28, 0x26	; 38
+	int8_t humidity = 0;
+  be:	a7 96       	adiw	r28, 0x27	; 39
+  c0:	1f ae       	std	Y+63, r1	; 0x3f
+  c2:	a7 97       	sbiw	r28, 0x27	; 39
+				#elif DHT_FLOAT == 1
+				dtostrf(temperature, 3, 3, printbuff);
+				#endif
+				//Temperature in F
+				#if DHT_FLOAT == 0
+				itoa((((temperature*9)/5)+32), printbuff, 10);
+  c4:	05 e0       	ldi	r16, 0x05	; 5
+  c6:	10 e0       	ldi	r17, 0x00	; 0
+					PORTB |= (1 << RELAY_PIN);
+				}
+
+		}	
+		_delay_ms(100);
+		PORTB ^= (1 << LED_PIN);
+  c8:	ff 24       	eor	r15, r15
+  ca:	f3 94       	inc	r15
+	float humidity = 0;
+	#endif
+	
+	while (1)
+	{	
+		int8_t result = dht_gettemperaturehumidity(&temperature, &humidity);
+  cc:	be 01       	movw	r22, r28
+  ce:	6a 59       	subi	r22, 0x9A	; 154
+  d0:	7f 4f       	sbci	r23, 0xFF	; 255
+  d2:	ce 01       	movw	r24, r28
+  d4:	8b 59       	subi	r24, 0x9B	; 155
+  d6:	9f 4f       	sbci	r25, 0xFF	; 255
+  d8:	0e 94 e1 01 	call	0x3c2	; 0x3c2 <dht_gettemperaturehumidity>
+		if(result != -1 && result!= -2) {
+  dc:	8e 5f       	subi	r24, 0xFE	; 254
+  de:	82 30       	cpi	r24, 0x02	; 2
+  e0:	08 f4       	brcc	.+2      	; 0xe4 <main+0x4e>
+  e2:	64 c0       	rjmp	.+200    	; 0x1ac <main+0x116>
+				//Temperature in C
+				#if DHT_FLOAT == 0
+				itoa(temperature, printbuff, 10);
+  e4:	a6 96       	adiw	r28, 0x26	; 38
+  e6:	8f ad       	ldd	r24, Y+63	; 0x3f
+  e8:	a6 97       	sbiw	r28, 0x26	; 38
+    } else if (__radix < 2 || __radix > 36) {
+	*__s = 0;
+	return __s;
+    } else {
+	extern char *__itoa_ncheck (int, char *, unsigned char);
+	return __itoa_ncheck (__val, __s, __radix);
+  ea:	4a e0       	ldi	r20, 0x0A	; 10
+  ec:	be 01       	movw	r22, r28
+  ee:	6f 5f       	subi	r22, 0xFF	; 255
+  f0:	7f 4f       	sbci	r23, 0xFF	; 255
+  f2:	99 27       	eor	r25, r25
+  f4:	87 fd       	sbrc	r24, 7
+  f6:	90 95       	com	r25
+  f8:	0e 94 38 02 	call	0x470	; 0x470 <__itoa_ncheck>
+				#elif DHT_FLOAT == 1
+				dtostrf(temperature, 3, 3, printbuff);
+				#endif
+				//Temperature in F
+				#if DHT_FLOAT == 0
+				itoa((((temperature*9)/5)+32), printbuff, 10);
+  fc:	a6 96       	adiw	r28, 0x26	; 38
+  fe:	8f ad       	ldd	r24, Y+63	; 0x3f
+ 100:	a6 97       	sbiw	r28, 0x26	; 38
+ 102:	99 27       	eor	r25, r25
+ 104:	87 fd       	sbrc	r24, 7
+ 106:	90 95       	com	r25
+ 108:	9c 01       	movw	r18, r24
+ 10a:	22 0f       	add	r18, r18
+ 10c:	33 1f       	adc	r19, r19
+ 10e:	22 0f       	add	r18, r18
+ 110:	33 1f       	adc	r19, r19
+ 112:	22 0f       	add	r18, r18
+ 114:	33 1f       	adc	r19, r19
+ 116:	82 0f       	add	r24, r18
+ 118:	93 1f       	adc	r25, r19
+ 11a:	b8 01       	movw	r22, r16
+ 11c:	0e 94 10 02 	call	0x420	; 0x420 <__divmodhi4>
+ 120:	cb 01       	movw	r24, r22
+ 122:	4a e0       	ldi	r20, 0x0A	; 10
+ 124:	be 01       	movw	r22, r28
+ 126:	6f 5f       	subi	r22, 0xFF	; 255
+ 128:	7f 4f       	sbci	r23, 0xFF	; 255
+ 12a:	80 96       	adiw	r24, 0x20	; 32
+ 12c:	0e 94 38 02 	call	0x470	; 0x470 <__itoa_ncheck>
+				#elif DHT_FLOAT == 1
+				dtostrf(temperature, 3, 3, printbuff);
+				#endif
+				USART_Transmit("Temperature,"); USART_Transmit(printbuff); USART_Transmit("\r\n");
+ 130:	80 e0       	ldi	r24, 0x00	; 0
+ 132:	91 e0       	ldi	r25, 0x01	; 1
+ 134:	0e 94 ef 01 	call	0x3de	; 0x3de <USART_Transmit>
+ 138:	ce 01       	movw	r24, r28
+ 13a:	01 96       	adiw	r24, 0x01	; 1
+ 13c:	0e 94 ef 01 	call	0x3de	; 0x3de <USART_Transmit>
+ 140:	8d e0       	ldi	r24, 0x0D	; 13
+ 142:	91 e0       	ldi	r25, 0x01	; 1
+ 144:	0e 94 ef 01 	call	0x3de	; 0x3de <USART_Transmit>
+				//Relative Humidity in %				
+				#if DHT_FLOAT == 0
+				itoa(humidity, printbuff, 10);
+ 148:	a7 96       	adiw	r28, 0x27	; 39
+ 14a:	8f ad       	ldd	r24, Y+63	; 0x3f
+ 14c:	a7 97       	sbiw	r28, 0x27	; 39
+ 14e:	4a e0       	ldi	r20, 0x0A	; 10
+ 150:	be 01       	movw	r22, r28
+ 152:	6f 5f       	subi	r22, 0xFF	; 255
+ 154:	7f 4f       	sbci	r23, 0xFF	; 255
+ 156:	99 27       	eor	r25, r25
+ 158:	87 fd       	sbrc	r24, 7
+ 15a:	90 95       	com	r25
+ 15c:	0e 94 38 02 	call	0x470	; 0x470 <__itoa_ncheck>
+				#elif DHT_FLOAT == 1
+				dtostrf(humidity, 3, 3, printbuff);
+				#endif
+				USART_Transmit("Humidity,"); USART_Transmit(printbuff);USART_Transmit("\r\n");
+ 160:	80 e1       	ldi	r24, 0x10	; 16
+ 162:	91 e0       	ldi	r25, 0x01	; 1
+ 164:	0e 94 ef 01 	call	0x3de	; 0x3de <USART_Transmit>
+ 168:	ce 01       	movw	r24, r28
+ 16a:	01 96       	adiw	r24, 0x01	; 1
+ 16c:	0e 94 ef 01 	call	0x3de	; 0x3de <USART_Transmit>
+ 170:	8d e0       	ldi	r24, 0x0D	; 13
+ 172:	91 e0       	ldi	r25, 0x01	; 1
+ 174:	0e 94 ef 01 	call	0x3de	; 0x3de <USART_Transmit>
+				if ((((temperature*9)/5)+32) > 90)
+ 178:	a6 96       	adiw	r28, 0x26	; 38
+ 17a:	8f ad       	ldd	r24, Y+63	; 0x3f
+ 17c:	a6 97       	sbiw	r28, 0x26	; 38
+ 17e:	99 27       	eor	r25, r25
+ 180:	87 fd       	sbrc	r24, 7
+ 182:	90 95       	com	r25
+ 184:	9c 01       	movw	r18, r24
+ 186:	22 0f       	add	r18, r18
+ 188:	33 1f       	adc	r19, r19
+ 18a:	22 0f       	add	r18, r18
+ 18c:	33 1f       	adc	r19, r19
+ 18e:	22 0f       	add	r18, r18
+ 190:	33 1f       	adc	r19, r19
+ 192:	82 0f       	add	r24, r18
+ 194:	93 1f       	adc	r25, r19
+ 196:	b8 01       	movw	r22, r16
+ 198:	0e 94 10 02 	call	0x420	; 0x420 <__divmodhi4>
+ 19c:	60 5e       	subi	r22, 0xE0	; 224
+ 19e:	7f 4f       	sbci	r23, 0xFF	; 255
+ 1a0:	6b 35       	cpi	r22, 0x5B	; 91
+ 1a2:	71 05       	cpc	r23, r1
+ 1a4:	14 f0       	brlt	.+4      	; 0x1aa <main+0x114>
+				{
+					PORTB &= ~(1 << RELAY_PIN);
+ 1a6:	29 98       	cbi	0x05, 1	; 5
+ 1a8:	01 c0       	rjmp	.+2      	; 0x1ac <main+0x116>
+				}
+				else
+				{
+					PORTB |= (1 << RELAY_PIN);
+ 1aa:	29 9a       	sbi	0x05, 1	; 5
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 1ac:	2f ef       	ldi	r18, 0xFF	; 255
+ 1ae:	81 ee       	ldi	r24, 0xE1	; 225
+ 1b0:	94 e0       	ldi	r25, 0x04	; 4
+ 1b2:	21 50       	subi	r18, 0x01	; 1
+ 1b4:	80 40       	sbci	r24, 0x00	; 0
+ 1b6:	90 40       	sbci	r25, 0x00	; 0
+ 1b8:	e1 f7       	brne	.-8      	; 0x1b2 <main+0x11c>
+ 1ba:	00 c0       	rjmp	.+0      	; 0x1bc <main+0x126>
+ 1bc:	00 00       	nop
+				}
+
+		}	
+		_delay_ms(100);
+		PORTB ^= (1 << LED_PIN);
+ 1be:	85 b1       	in	r24, 0x05	; 5
+ 1c0:	8f 25       	eor	r24, r15
+ 1c2:	85 b9       	out	0x05, r24	; 5
+	}
+ 1c4:	83 cf       	rjmp	.-250    	; 0xcc <main+0x36>
+
+000001c6 <dht_getdata>:
+ * get data from sensor
+ */
+#if DHT_FLOAT == 1
+int8_t dht_getdata(float *temperature, float *humidity) {
+#elif DHT_FLOAT == 0
+int8_t dht_getdata(int8_t *temperature, int8_t *humidity) {
+ 1c6:	af 92       	push	r10
+ 1c8:	bf 92       	push	r11
+ 1ca:	cf 92       	push	r12
+ 1cc:	df 92       	push	r13
+ 1ce:	ef 92       	push	r14
+ 1d0:	ff 92       	push	r15
+ 1d2:	0f 93       	push	r16
+ 1d4:	1f 93       	push	r17
+ 1d6:	cf 93       	push	r28
+ 1d8:	df 93       	push	r29
+ 1da:	00 d0       	rcall	.+0      	; 0x1dc <dht_getdata+0x16>
+ 1dc:	00 d0       	rcall	.+0      	; 0x1de <dht_getdata+0x18>
+ 1de:	1f 92       	push	r1
+ 1e0:	cd b7       	in	r28, 0x3d	; 61
+ 1e2:	de b7       	in	r29, 0x3e	; 62
+#endif
+	uint8_t bits[5];
+	uint8_t i,j = 0;
+
+	memset(bits, 0, sizeof(bits));
+ 1e4:	fe 01       	movw	r30, r28
+ 1e6:	31 96       	adiw	r30, 0x01	; 1
+ 1e8:	25 e0       	ldi	r18, 0x05	; 5
+ 1ea:	df 01       	movw	r26, r30
+ 1ec:	1d 92       	st	X+, r1
+ 1ee:	2a 95       	dec	r18
+ 1f0:	e9 f7       	brne	.-6      	; 0x1ec <dht_getdata+0x26>
+
+	//reset port
+	DHT_DDR |= (1<<DHT_INPUTPIN); //output
+ 1f2:	38 9a       	sbi	0x07, 0	; 7
+	DHT_PORT |= (1<<DHT_INPUTPIN); //high
+ 1f4:	40 9a       	sbi	0x08, 0	; 8
+ 1f6:	ef ef       	ldi	r30, 0xFF	; 255
+ 1f8:	f9 ef       	ldi	r31, 0xF9	; 249
+ 1fa:	31 97       	sbiw	r30, 0x01	; 1
+ 1fc:	f1 f7       	brne	.-4      	; 0x1fa <dht_getdata+0x34>
+ 1fe:	00 c0       	rjmp	.+0      	; 0x200 <dht_getdata+0x3a>
+ 200:	00 00       	nop
+ 202:	af ef       	ldi	r26, 0xFF	; 255
+ 204:	b9 ef       	ldi	r27, 0xF9	; 249
+ 206:	11 97       	sbiw	r26, 0x01	; 1
+ 208:	f1 f7       	brne	.-4      	; 0x206 <dht_getdata+0x40>
+ 20a:	00 c0       	rjmp	.+0      	; 0x20c <dht_getdata+0x46>
+ 20c:	00 00       	nop
+ 20e:	ef ef       	ldi	r30, 0xFF	; 255
+ 210:	f9 ef       	ldi	r31, 0xF9	; 249
+ 212:	31 97       	sbiw	r30, 0x01	; 1
+ 214:	f1 f7       	brne	.-4      	; 0x212 <dht_getdata+0x4c>
+ 216:	00 c0       	rjmp	.+0      	; 0x218 <dht_getdata+0x52>
+ 218:	00 00       	nop
+ 21a:	af ef       	ldi	r26, 0xFF	; 255
+ 21c:	b9 ef       	ldi	r27, 0xF9	; 249
+ 21e:	11 97       	sbiw	r26, 0x01	; 1
+ 220:	f1 f7       	brne	.-4      	; 0x21e <dht_getdata+0x58>
+ 222:	00 c0       	rjmp	.+0      	; 0x224 <dht_getdata+0x5e>
+ 224:	00 00       	nop
+ 226:	ef ef       	ldi	r30, 0xFF	; 255
+ 228:	f9 ef       	ldi	r31, 0xF9	; 249
+ 22a:	31 97       	sbiw	r30, 0x01	; 1
+ 22c:	f1 f7       	brne	.-4      	; 0x22a <dht_getdata+0x64>
+ 22e:	00 c0       	rjmp	.+0      	; 0x230 <dht_getdata+0x6a>
+ 230:	00 00       	nop
+ 232:	af ef       	ldi	r26, 0xFF	; 255
+ 234:	b9 ef       	ldi	r27, 0xF9	; 249
+ 236:	11 97       	sbiw	r26, 0x01	; 1
+ 238:	f1 f7       	brne	.-4      	; 0x236 <dht_getdata+0x70>
+ 23a:	00 c0       	rjmp	.+0      	; 0x23c <dht_getdata+0x76>
+ 23c:	00 00       	nop
+ 23e:	ef e7       	ldi	r30, 0x7F	; 127
+ 240:	fe e3       	ldi	r31, 0x3E	; 62
+ 242:	31 97       	sbiw	r30, 0x01	; 1
+ 244:	f1 f7       	brne	.-4      	; 0x242 <dht_getdata+0x7c>
+ 246:	00 c0       	rjmp	.+0      	; 0x248 <dht_getdata+0x82>
+ 248:	00 00       	nop
+	_delay_ms(16); //was 100
+	_delay_ms(4); //was 100
+	
+	
+	//send request
+	DHT_PORT &= ~(1<<DHT_INPUTPIN); //low
+ 24a:	40 98       	cbi	0x08, 0	; 8
+ 24c:	ff ef       	ldi	r31, 0xFF	; 255
+ 24e:	20 ee       	ldi	r18, 0xE0	; 224
+ 250:	30 e0       	ldi	r19, 0x00	; 0
+ 252:	f1 50       	subi	r31, 0x01	; 1
+ 254:	20 40       	sbci	r18, 0x00	; 0
+ 256:	30 40       	sbci	r19, 0x00	; 0
+ 258:	e1 f7       	brne	.-8      	; 0x252 <dht_getdata+0x8c>
+ 25a:	00 c0       	rjmp	.+0      	; 0x25c <dht_getdata+0x96>
+ 25c:	00 00       	nop
+	_delay_us(48); // was 500
+	_delay_us(20); // was 500
+	
+	
+	#endif
+	DHT_PORT |= (1<<DHT_INPUTPIN); //high
+ 25e:	40 9a       	sbi	0x08, 0	; 8
+	DHT_DDR &= ~(1<<DHT_INPUTPIN); //input
+ 260:	38 98       	cbi	0x07, 0	; 7
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 262:	45 ed       	ldi	r20, 0xD5	; 213
+ 264:	4a 95       	dec	r20
+ 266:	f1 f7       	brne	.-4      	; 0x264 <dht_getdata+0x9e>
+ 268:	00 00       	nop
+	_delay_us(40); // was 40
+
+	//check start condition 1
+	if((DHT_PIN & (1<<DHT_INPUTPIN))) {
+ 26a:	30 99       	sbic	0x06, 0	; 6
+ 26c:	91 c0       	rjmp	.+290    	; 0x390 <dht_getdata+0x1ca>
+ 26e:	a5 ed       	ldi	r26, 0xD5	; 213
+ 270:	aa 95       	dec	r26
+ 272:	f1 f7       	brne	.-4      	; 0x270 <dht_getdata+0xaa>
+ 274:	00 00       	nop
+ 276:	b5 ed       	ldi	r27, 0xD5	; 213
+ 278:	ba 95       	dec	r27
+ 27a:	f1 f7       	brne	.-4      	; 0x278 <dht_getdata+0xb2>
+ 27c:	00 00       	nop
+		return -1;
+	}
+	_delay_us(40);	// was80
+	_delay_us(40);	// was80
+	//required delays to get accurate readings. With only 40uS Temperatures are ~half
+	while (!DHT_PIN)
+ 27e:	26 b1       	in	r18, 0x06	; 6
+ 280:	22 23       	and	r18, r18
+ 282:	e9 f3       	breq	.-6      	; 0x27e <dht_getdata+0xb8>
+	{
+		
+	}
+	//check start condition 2
+	if(!(DHT_PIN & (1<<(DHT_INPUTPIN)))) {
+ 284:	30 9b       	sbis	0x06, 0	; 6
+ 286:	86 c0       	rjmp	.+268    	; 0x394 <dht_getdata+0x1ce>
+ 288:	e5 ed       	ldi	r30, 0xD5	; 213
+ 28a:	ea 95       	dec	r30
+ 28c:	f1 f7       	brne	.-4      	; 0x28a <dht_getdata+0xc4>
+ 28e:	00 00       	nop
+ 290:	f5 ed       	ldi	r31, 0xD5	; 213
+ 292:	fa 95       	dec	r31
+ 294:	f1 f7       	brne	.-4      	; 0x292 <dht_getdata+0xcc>
+ 296:	00 00       	nop
+ 298:	de 01       	movw	r26, r28
+ 29a:	11 96       	adiw	r26, 0x01	; 1
+ 29c:	8e 01       	movw	r16, r28
+ 29e:	0a 5f       	subi	r16, 0xFA	; 250
+ 2a0:	1f 4f       	sbci	r17, 0xFF	; 255
+ * get data from sensor
+ */
+#if DHT_FLOAT == 1
+int8_t dht_getdata(float *temperature, float *humidity) {
+#elif DHT_FLOAT == 0
+int8_t dht_getdata(int8_t *temperature, int8_t *humidity) {
+ 2a2:	0f 2e       	mov	r0, r31
+ 2a4:	f7 e0       	ldi	r31, 0x07	; 7
+ 2a6:	af 2e       	mov	r10, r31
+ 2a8:	f0 2d       	mov	r31, r0
+ 2aa:	b1 2c       	mov	r11, r1
+ 2ac:	c1 2c       	mov	r12, r1
+					return -1; //timeout
+				}
+			}
+			_delay_us(30);	//was 30
+			if(DHT_PIN & (1<<DHT_INPUTPIN)) //if input is high after 30 us, get result
+				result |= (1<<(7-i));
+ 2ae:	e1 e0       	ldi	r30, 0x01	; 1
+ 2b0:	f0 e0       	ldi	r31, 0x00	; 0
+ * get data from sensor
+ */
+#if DHT_FLOAT == 1
+int8_t dht_getdata(float *temperature, float *humidity) {
+#elif DHT_FLOAT == 0
+int8_t dht_getdata(int8_t *temperature, int8_t *humidity) {
+ 2b2:	0f 2e       	mov	r0, r31
+ 2b4:	f9 ec       	ldi	r31, 0xC9	; 201
+ 2b6:	ef 2e       	mov	r14, r31
+ 2b8:	f0 2d       	mov	r31, r0
+ 2ba:	f1 2c       	mov	r15, r1
+ 2bc:	29 c0       	rjmp	.+82     	; 0x310 <dht_getdata+0x14a>
+ 2be:	21 50       	subi	r18, 0x01	; 1
+ 2c0:	31 09       	sbc	r19, r1
+		uint8_t result=0;
+		for(i=0; i<8; i++) {//read every bit
+			timeoutcounter = 0;
+			while(!(DHT_PIN & (1<<DHT_INPUTPIN))) { //wait for an high input (non blocking)
+				timeoutcounter++;
+				if(timeoutcounter > DHT_TIMEOUT) {
+ 2c2:	21 15       	cp	r18, r1
+ 2c4:	31 05       	cpc	r19, r1
+ 2c6:	19 f4       	brne	.+6      	; 0x2ce <dht_getdata+0x108>
+ 2c8:	67 c0       	rjmp	.+206    	; 0x398 <dht_getdata+0x1d2>
+ * get data from sensor
+ */
+#if DHT_FLOAT == 1
+int8_t dht_getdata(float *temperature, float *humidity) {
+#elif DHT_FLOAT == 0
+int8_t dht_getdata(int8_t *temperature, int8_t *humidity) {
+ 2ca:	2e 2d       	mov	r18, r14
+ 2cc:	3f 2d       	mov	r19, r15
+	uint16_t timeoutcounter = 0;
+	for (j=0; j<5; j++) { //read 5 byte
+		uint8_t result=0;
+		for(i=0; i<8; i++) {//read every bit
+			timeoutcounter = 0;
+			while(!(DHT_PIN & (1<<DHT_INPUTPIN))) { //wait for an high input (non blocking)
+ 2ce:	30 9b       	sbis	0x06, 0	; 6
+ 2d0:	f6 cf       	rjmp	.-20     	; 0x2be <dht_getdata+0xf8>
+ 2d2:	20 ea       	ldi	r18, 0xA0	; 160
+ 2d4:	2a 95       	dec	r18
+ 2d6:	f1 f7       	brne	.-4      	; 0x2d4 <dht_getdata+0x10e>
+				if(timeoutcounter > DHT_TIMEOUT) {
+					return -1; //timeout
+				}
+			}
+			_delay_us(30);	//was 30
+			if(DHT_PIN & (1<<DHT_INPUTPIN)) //if input is high after 30 us, get result
+ 2d8:	30 9b       	sbis	0x06, 0	; 6
+ 2da:	08 c0       	rjmp	.+16     	; 0x2ec <dht_getdata+0x126>
+				result |= (1<<(7-i));
+ 2dc:	9f 01       	movw	r18, r30
+ 2de:	04 2e       	mov	r0, r20
+ 2e0:	02 c0       	rjmp	.+4      	; 0x2e6 <dht_getdata+0x120>
+ 2e2:	22 0f       	add	r18, r18
+ 2e4:	33 1f       	adc	r19, r19
+ 2e6:	0a 94       	dec	r0
+ 2e8:	e2 f7       	brpl	.-8      	; 0x2e2 <dht_getdata+0x11c>
+ 2ea:	d2 2a       	or	r13, r18
+			timeoutcounter = 0;
+			while(DHT_PIN & (1<<DHT_INPUTPIN)) { //wait until input get low (non blocking)
+ 2ec:	2e 2d       	mov	r18, r14
+ 2ee:	3f 2d       	mov	r19, r15
+ 2f0:	06 c0       	rjmp	.+12     	; 0x2fe <dht_getdata+0x138>
+ 2f2:	21 50       	subi	r18, 0x01	; 1
+ 2f4:	31 09       	sbc	r19, r1
+				timeoutcounter++;
+				if(timeoutcounter > DHT_TIMEOUT) {
+ 2f6:	21 15       	cp	r18, r1
+ 2f8:	31 05       	cpc	r19, r1
+ 2fa:	09 f4       	brne	.+2      	; 0x2fe <dht_getdata+0x138>
+ 2fc:	4f c0       	rjmp	.+158    	; 0x39c <dht_getdata+0x1d6>
+			}
+			_delay_us(30);	//was 30
+			if(DHT_PIN & (1<<DHT_INPUTPIN)) //if input is high after 30 us, get result
+				result |= (1<<(7-i));
+			timeoutcounter = 0;
+			while(DHT_PIN & (1<<DHT_INPUTPIN)) { //wait until input get low (non blocking)
+ 2fe:	30 99       	sbic	0x06, 0	; 6
+ 300:	f8 cf       	rjmp	.-16     	; 0x2f2 <dht_getdata+0x12c>
+ 302:	41 50       	subi	r20, 0x01	; 1
+ 304:	51 09       	sbc	r21, r1
+ 306:	08 f7       	brcc	.-62     	; 0x2ca <dht_getdata+0x104>
+				if(timeoutcounter > DHT_TIMEOUT) {
+					return -1; //timeout
+				}
+			}
+		}
+		bits[j] = result;
+ 308:	dd 92       	st	X+, r13
+	_delay_us(40);	// was80
+	_delay_us(40);	// was80
+
+	//read the data
+	uint16_t timeoutcounter = 0;
+	for (j=0; j<5; j++) { //read 5 byte
+ 30a:	a0 17       	cp	r26, r16
+ 30c:	b1 07       	cpc	r27, r17
+ 30e:	21 f0       	breq	.+8      	; 0x318 <dht_getdata+0x152>
+ * get data from sensor
+ */
+#if DHT_FLOAT == 1
+int8_t dht_getdata(float *temperature, float *humidity) {
+#elif DHT_FLOAT == 0
+int8_t dht_getdata(int8_t *temperature, int8_t *humidity) {
+ 310:	4a 2d       	mov	r20, r10
+ 312:	5b 2d       	mov	r21, r11
+ 314:	dc 2c       	mov	r13, r12
+ 316:	d9 cf       	rjmp	.-78     	; 0x2ca <dht_getdata+0x104>
+		}
+		bits[j] = result;
+	}
+
+	//reset port
+	DHT_DDR |= (1<<DHT_INPUTPIN); //output
+ 318:	38 9a       	sbi	0x07, 0	; 7
+	DHT_PORT |= (1<<DHT_INPUTPIN); //low
+ 31a:	40 9a       	sbi	0x08, 0	; 8
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 31c:	af ef       	ldi	r26, 0xFF	; 255
+ 31e:	b9 ef       	ldi	r27, 0xF9	; 249
+ 320:	11 97       	sbiw	r26, 0x01	; 1
+ 322:	f1 f7       	brne	.-4      	; 0x320 <dht_getdata+0x15a>
+ 324:	00 c0       	rjmp	.+0      	; 0x326 <dht_getdata+0x160>
+ 326:	00 00       	nop
+ 328:	ef ef       	ldi	r30, 0xFF	; 255
+ 32a:	f9 ef       	ldi	r31, 0xF9	; 249
+ 32c:	31 97       	sbiw	r30, 0x01	; 1
+ 32e:	f1 f7       	brne	.-4      	; 0x32c <dht_getdata+0x166>
+ 330:	00 c0       	rjmp	.+0      	; 0x332 <dht_getdata+0x16c>
+ 332:	00 00       	nop
+ 334:	af ef       	ldi	r26, 0xFF	; 255
+ 336:	b9 ef       	ldi	r27, 0xF9	; 249
+ 338:	11 97       	sbiw	r26, 0x01	; 1
+ 33a:	f1 f7       	brne	.-4      	; 0x338 <dht_getdata+0x172>
+ 33c:	00 c0       	rjmp	.+0      	; 0x33e <dht_getdata+0x178>
+ 33e:	00 00       	nop
+ 340:	ef ef       	ldi	r30, 0xFF	; 255
+ 342:	f9 ef       	ldi	r31, 0xF9	; 249
+ 344:	31 97       	sbiw	r30, 0x01	; 1
+ 346:	f1 f7       	brne	.-4      	; 0x344 <dht_getdata+0x17e>
+ 348:	00 c0       	rjmp	.+0      	; 0x34a <dht_getdata+0x184>
+ 34a:	00 00       	nop
+ 34c:	af ef       	ldi	r26, 0xFF	; 255
+ 34e:	b9 ef       	ldi	r27, 0xF9	; 249
+ 350:	11 97       	sbiw	r26, 0x01	; 1
+ 352:	f1 f7       	brne	.-4      	; 0x350 <dht_getdata+0x18a>
+ 354:	00 c0       	rjmp	.+0      	; 0x356 <dht_getdata+0x190>
+ 356:	00 00       	nop
+ 358:	ef ef       	ldi	r30, 0xFF	; 255
+ 35a:	f9 ef       	ldi	r31, 0xF9	; 249
+ 35c:	31 97       	sbiw	r30, 0x01	; 1
+ 35e:	f1 f7       	brne	.-4      	; 0x35c <dht_getdata+0x196>
+ 360:	00 c0       	rjmp	.+0      	; 0x362 <dht_getdata+0x19c>
+ 362:	00 00       	nop
+ 364:	af e7       	ldi	r26, 0x7F	; 127
+ 366:	be e3       	ldi	r27, 0x3E	; 62
+ 368:	11 97       	sbiw	r26, 0x01	; 1
+ 36a:	f1 f7       	brne	.-4      	; 0x368 <dht_getdata+0x1a2>
+ 36c:	00 c0       	rjmp	.+0      	; 0x36e <dht_getdata+0x1a8>
+ 36e:	00 00       	nop
+	_delay_ms(16); //was 100
+	_delay_ms(4); //was 100
+	
+
+	//check checksum
+	if ((uint8_t)(bits[0] + bits[1] + bits[2] + bits[3]) == bits[4]) {
+ 370:	29 81       	ldd	r18, Y+1	; 0x01
+ 372:	3b 81       	ldd	r19, Y+3	; 0x03
+ 374:	5a 81       	ldd	r21, Y+2	; 0x02
+ 376:	52 0f       	add	r21, r18
+ 378:	53 0f       	add	r21, r19
+ 37a:	4c 81       	ldd	r20, Y+4	; 0x04
+ 37c:	54 0f       	add	r21, r20
+ 37e:	4d 81       	ldd	r20, Y+5	; 0x05
+ 380:	54 13       	cpse	r21, r20
+ 382:	0e c0       	rjmp	.+28     	; 0x3a0 <dht_getdata+0x1da>
+		//return temperature and humidity
+		#if DHT_TYPE == DHT_DHT11
+		*temperature = bits[2];
+ 384:	fc 01       	movw	r30, r24
+ 386:	30 83       	st	Z, r19
+		*humidity = bits[0];
+ 388:	db 01       	movw	r26, r22
+ 38a:	2c 93       	st	X, r18
+		} else {
+			*temperature = (float)(rawtemperature)/10.0;
+		}
+		*humidity = (float)(rawhumidity)/10.0;
+		#endif
+		return 0;
+ 38c:	80 e0       	ldi	r24, 0x00	; 0
+ 38e:	09 c0       	rjmp	.+18     	; 0x3a2 <dht_getdata+0x1dc>
+	DHT_DDR &= ~(1<<DHT_INPUTPIN); //input
+	_delay_us(40); // was 40
+
+	//check start condition 1
+	if((DHT_PIN & (1<<DHT_INPUTPIN))) {
+		return -1;
+ 390:	8f ef       	ldi	r24, 0xFF	; 255
+ 392:	07 c0       	rjmp	.+14     	; 0x3a2 <dht_getdata+0x1dc>
+	{
+		
+	}
+	//check start condition 2
+	if(!(DHT_PIN & (1<<(DHT_INPUTPIN)))) {
+		return -2;
+ 394:	8e ef       	ldi	r24, 0xFE	; 254
+ 396:	05 c0       	rjmp	.+10     	; 0x3a2 <dht_getdata+0x1dc>
+		for(i=0; i<8; i++) {//read every bit
+			timeoutcounter = 0;
+			while(!(DHT_PIN & (1<<DHT_INPUTPIN))) { //wait for an high input (non blocking)
+				timeoutcounter++;
+				if(timeoutcounter > DHT_TIMEOUT) {
+					return -1; //timeout
+ 398:	8f ef       	ldi	r24, 0xFF	; 255
+ 39a:	03 c0       	rjmp	.+6      	; 0x3a2 <dht_getdata+0x1dc>
+				result |= (1<<(7-i));
+			timeoutcounter = 0;
+			while(DHT_PIN & (1<<DHT_INPUTPIN)) { //wait until input get low (non blocking)
+				timeoutcounter++;
+				if(timeoutcounter > DHT_TIMEOUT) {
+					return -1; //timeout
+ 39c:	8f ef       	ldi	r24, 0xFF	; 255
+ 39e:	01 c0       	rjmp	.+2      	; 0x3a2 <dht_getdata+0x1dc>
+		*humidity = (float)(rawhumidity)/10.0;
+		#endif
+		return 0;
+	}
+
+	return -1;
+ 3a0:	8f ef       	ldi	r24, 0xFF	; 255
+}
+ 3a2:	0f 90       	pop	r0
+ 3a4:	0f 90       	pop	r0
+ 3a6:	0f 90       	pop	r0
+ 3a8:	0f 90       	pop	r0
+ 3aa:	0f 90       	pop	r0
+ 3ac:	df 91       	pop	r29
+ 3ae:	cf 91       	pop	r28
+ 3b0:	1f 91       	pop	r17
+ 3b2:	0f 91       	pop	r16
+ 3b4:	ff 90       	pop	r15
+ 3b6:	ef 90       	pop	r14
+ 3b8:	df 90       	pop	r13
+ 3ba:	cf 90       	pop	r12
+ 3bc:	bf 90       	pop	r11
+ 3be:	af 90       	pop	r10
+ 3c0:	08 95       	ret
+
+000003c2 <dht_gettemperaturehumidity>:
+#if DHT_FLOAT == 1
+	int8_t dht_gettemperaturehumidity(float *temperature, float *humidity) {
+#elif DHT_FLOAT == 0
+	int8_t dht_gettemperaturehumidity(int8_t *temperature, int8_t *humidity) {
+#endif
+	return dht_getdata(temperature, humidity);
+ 3c2:	0e 94 e3 00 	call	0x1c6	; 0x1c6 <dht_getdata>
+}
+ 3c6:	08 95       	ret
+
+000003c8 <USART_Init>:
+ 3c8:	90 93 c5 00 	sts	0x00C5, r25
+ 3cc:	80 93 c4 00 	sts	0x00C4, r24
+ 3d0:	88 e1       	ldi	r24, 0x18	; 24
+ 3d2:	80 93 c1 00 	sts	0x00C1, r24
+ 3d6:	8e e0       	ldi	r24, 0x0E	; 14
+ 3d8:	80 93 c2 00 	sts	0x00C2, r24
+ 3dc:	08 95       	ret
+
+000003de <USART_Transmit>:
+ 3de:	cf 93       	push	r28
+ 3e0:	df 93       	push	r29
+ 3e2:	ec 01       	movw	r28, r24
+ 3e4:	20 e0       	ldi	r18, 0x00	; 0
+ 3e6:	30 e0       	ldi	r19, 0x00	; 0
+ 3e8:	e0 ec       	ldi	r30, 0xC0	; 192
+ 3ea:	f0 e0       	ldi	r31, 0x00	; 0
+ 3ec:	46 ec       	ldi	r20, 0xC6	; 198
+ 3ee:	50 e0       	ldi	r21, 0x00	; 0
+ 3f0:	0a c0       	rjmp	.+20     	; 0x406 <USART_Transmit+0x28>
+ 3f2:	60 81       	ld	r22, Z
+ 3f4:	65 ff       	sbrs	r22, 5
+ 3f6:	fd cf       	rjmp	.-6      	; 0x3f2 <USART_Transmit+0x14>
+ 3f8:	dc 01       	movw	r26, r24
+ 3fa:	6d 91       	ld	r22, X+
+ 3fc:	cd 01       	movw	r24, r26
+ 3fe:	da 01       	movw	r26, r20
+ 400:	6c 93       	st	X, r22
+ 402:	2f 5f       	subi	r18, 0xFF	; 255
+ 404:	3f 4f       	sbci	r19, 0xFF	; 255
+ 406:	de 01       	movw	r26, r28
+ 408:	0d 90       	ld	r0, X+
+ 40a:	00 20       	and	r0, r0
+ 40c:	e9 f7       	brne	.-6      	; 0x408 <USART_Transmit+0x2a>
+ 40e:	11 97       	sbiw	r26, 0x01	; 1
+ 410:	ac 1b       	sub	r26, r28
+ 412:	bd 0b       	sbc	r27, r29
+ 414:	2a 17       	cp	r18, r26
+ 416:	3b 07       	cpc	r19, r27
+ 418:	60 f3       	brcs	.-40     	; 0x3f2 <USART_Transmit+0x14>
+ 41a:	df 91       	pop	r29
+ 41c:	cf 91       	pop	r28
+ 41e:	08 95       	ret
+
+00000420 <__divmodhi4>:
+ 420:	97 fb       	bst	r25, 7
+ 422:	07 2e       	mov	r0, r23
+ 424:	16 f4       	brtc	.+4      	; 0x42a <__divmodhi4+0xa>
+ 426:	00 94       	com	r0
+ 428:	07 d0       	rcall	.+14     	; 0x438 <__divmodhi4_neg1>
+ 42a:	77 fd       	sbrc	r23, 7
+ 42c:	09 d0       	rcall	.+18     	; 0x440 <__divmodhi4_neg2>
+ 42e:	0e 94 24 02 	call	0x448	; 0x448 <__udivmodhi4>
+ 432:	07 fc       	sbrc	r0, 7
+ 434:	05 d0       	rcall	.+10     	; 0x440 <__divmodhi4_neg2>
+ 436:	3e f4       	brtc	.+14     	; 0x446 <__divmodhi4_exit>
+
+00000438 <__divmodhi4_neg1>:
+ 438:	90 95       	com	r25
+ 43a:	81 95       	neg	r24
+ 43c:	9f 4f       	sbci	r25, 0xFF	; 255
+ 43e:	08 95       	ret
+
+00000440 <__divmodhi4_neg2>:
+ 440:	70 95       	com	r23
+ 442:	61 95       	neg	r22
+ 444:	7f 4f       	sbci	r23, 0xFF	; 255
+
+00000446 <__divmodhi4_exit>:
+ 446:	08 95       	ret
+
+00000448 <__udivmodhi4>:
+ 448:	aa 1b       	sub	r26, r26
+ 44a:	bb 1b       	sub	r27, r27
+ 44c:	51 e1       	ldi	r21, 0x11	; 17
+ 44e:	07 c0       	rjmp	.+14     	; 0x45e <__udivmodhi4_ep>
+
+00000450 <__udivmodhi4_loop>:
+ 450:	aa 1f       	adc	r26, r26
+ 452:	bb 1f       	adc	r27, r27
+ 454:	a6 17       	cp	r26, r22
+ 456:	b7 07       	cpc	r27, r23
+ 458:	10 f0       	brcs	.+4      	; 0x45e <__udivmodhi4_ep>
+ 45a:	a6 1b       	sub	r26, r22
+ 45c:	b7 0b       	sbc	r27, r23
+
+0000045e <__udivmodhi4_ep>:
+ 45e:	88 1f       	adc	r24, r24
+ 460:	99 1f       	adc	r25, r25
+ 462:	5a 95       	dec	r21
+ 464:	a9 f7       	brne	.-22     	; 0x450 <__udivmodhi4_loop>
+ 466:	80 95       	com	r24
+ 468:	90 95       	com	r25
+ 46a:	bc 01       	movw	r22, r24
+ 46c:	cd 01       	movw	r24, r26
+ 46e:	08 95       	ret
+
+00000470 <__itoa_ncheck>:
+ 470:	bb 27       	eor	r27, r27
+ 472:	4a 30       	cpi	r20, 0x0A	; 10
+ 474:	31 f4       	brne	.+12     	; 0x482 <__itoa_ncheck+0x12>
+ 476:	99 23       	and	r25, r25
+ 478:	22 f4       	brpl	.+8      	; 0x482 <__itoa_ncheck+0x12>
+ 47a:	bd e2       	ldi	r27, 0x2D	; 45
+ 47c:	90 95       	com	r25
+ 47e:	81 95       	neg	r24
+ 480:	9f 4f       	sbci	r25, 0xFF	; 255
+ 482:	0c 94 44 02 	jmp	0x488	; 0x488 <__utoa_common>
+
+00000486 <__utoa_ncheck>:
+ 486:	bb 27       	eor	r27, r27
+
+00000488 <__utoa_common>:
+ 488:	fb 01       	movw	r30, r22
+ 48a:	55 27       	eor	r21, r21
+ 48c:	aa 27       	eor	r26, r26
+ 48e:	88 0f       	add	r24, r24
+ 490:	99 1f       	adc	r25, r25
+ 492:	aa 1f       	adc	r26, r26
+ 494:	a4 17       	cp	r26, r20
+ 496:	10 f0       	brcs	.+4      	; 0x49c <__utoa_common+0x14>
+ 498:	a4 1b       	sub	r26, r20
+ 49a:	83 95       	inc	r24
+ 49c:	50 51       	subi	r21, 0x10	; 16
+ 49e:	b9 f7       	brne	.-18     	; 0x48e <__utoa_common+0x6>
+ 4a0:	a0 5d       	subi	r26, 0xD0	; 208
+ 4a2:	aa 33       	cpi	r26, 0x3A	; 58
+ 4a4:	08 f0       	brcs	.+2      	; 0x4a8 <__utoa_common+0x20>
+ 4a6:	a9 5d       	subi	r26, 0xD9	; 217
+ 4a8:	a1 93       	st	Z+, r26
+ 4aa:	00 97       	sbiw	r24, 0x00	; 0
+ 4ac:	79 f7       	brne	.-34     	; 0x48c <__utoa_common+0x4>
+ 4ae:	b1 11       	cpse	r27, r1
+ 4b0:	b1 93       	st	Z+, r27
+ 4b2:	11 92       	st	Z+, r1
+ 4b4:	cb 01       	movw	r24, r22
+ 4b6:	0c 94 5d 02 	jmp	0x4ba	; 0x4ba <strrev>
+
+000004ba <strrev>:
+ 4ba:	dc 01       	movw	r26, r24
+ 4bc:	fc 01       	movw	r30, r24
+ 4be:	67 2f       	mov	r22, r23
+ 4c0:	71 91       	ld	r23, Z+
+ 4c2:	77 23       	and	r23, r23
+ 4c4:	e1 f7       	brne	.-8      	; 0x4be <strrev+0x4>
+ 4c6:	32 97       	sbiw	r30, 0x02	; 2
+ 4c8:	04 c0       	rjmp	.+8      	; 0x4d2 <strrev+0x18>
+ 4ca:	7c 91       	ld	r23, X
+ 4cc:	6d 93       	st	X+, r22
+ 4ce:	70 83       	st	Z, r23
+ 4d0:	62 91       	ld	r22, -Z
+ 4d2:	ae 17       	cp	r26, r30
+ 4d4:	bf 07       	cpc	r27, r31
+ 4d6:	c8 f3       	brcs	.-14     	; 0x4ca <strrev+0x10>
+ 4d8:	08 95       	ret
+
+000004da <_exit>:
+ 4da:	f8 94       	cli
+
+000004dc <__stop_program>:
+ 4dc:	ff cf       	rjmp	.-2      	; 0x4dc <__stop_program>

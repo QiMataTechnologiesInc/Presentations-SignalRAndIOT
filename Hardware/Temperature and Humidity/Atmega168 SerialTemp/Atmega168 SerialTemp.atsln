@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Atmega168 SerialTemp", "Atmega168 SerialTemp\Atmega168 SerialTemp.cproj", "{06F7227B-F6AE-493A-8A4C-DA2440A32161}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06F7227B-F6AE-493A-8A4C-DA2440A32161}.Debug|AVR.ActiveCfg = Debug|AVR
+		{06F7227B-F6AE-493A-8A4C-DA2440A32161}.Debug|AVR.Build.0 = Debug|AVR
+		{06F7227B-F6AE-493A-8A4C-DA2440A32161}.Release|AVR.ActiveCfg = Release|AVR
+		{06F7227B-F6AE-493A-8A4C-DA2440A32161}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
